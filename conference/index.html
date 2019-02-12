@@ -7,6 +7,7 @@
 		<link rel="shortcut icon" href="img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="codepixer">
+
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
@@ -16,7 +17,11 @@
 		<!-- Site Title -->
 		<title>Techutsav-Thiagrajar College of Engineering</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+ 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 			<!--
 			CSS
 			============================================= -->
@@ -24,10 +29,36 @@
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/nice-select.css">
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<style media="screen">
+				.list-group-item
+				{
+					background-color:black;
+				}
+				tr:nth-child(even){
+					background-color:#4A861C;
+					color:black;
+				}
+				tr:nth-child(odd){
+					background-color: #102564 !important;
+				}
+				table,th
+				{
+					border:3px solid goldenrod !important;
+				}
+				th
+				{
+					background-color:#7C0404 !important;
+				}
+				/* th
+				{
+					background-color: green;
+					color:white;
+				} */
+			</style>
 		</head>
 		<body>
 
@@ -42,7 +73,7 @@
 				          <li class="menu-active"><a href="#home">Home</a></li>
 				          <li><a href="#videos">Events</a></li>
 				          <li><a href="#speakers">Workshops</a></li>
-				          <li><a href="#schedule">Buildathon</a></li>
+				          <li><a href="#schedule">Hackathon</a></li>
 				          <!--<li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
 				              <li><a href="generic.html">Generic</a></li>
@@ -50,227 +81,202 @@
 				            </ul>
 				          </li> -->
 				          <li><a class="ticker-btn" href="#">Register</a></li>
-				        </ul> 
-				      </nav><!-- #nav-menu-container -->		    		
+				        </ul>
+				      </nav><!-- #nav-menu-container -->
 			    	</div>
 			    </div>
 			  </header><!-- #header -->
 
 
 			<!-- start banner Area -->
-			<section class="banner-area relative" id="home">	
+			<section class="banner-area relative" id="home">
 				<div class="overlay overlay-bg"></div>
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-9 col-md-12">
 							<h6>Now you can watch the Talent</h6>
 							<h1 class="text-white">
-								TECHUTSAV				
+								TECHUTSAV
 							</h1>
 							<div class="countdown">
 								<div id="timer" class="text-white"></div>
 							</div>
 							<h4><span class="lnr lnr-calendar-full"></span>  07th - 08th March, 2019</h4>
-						</div>											
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->				
-	
+			<!-- End banner Area -->
+
 			<!-- Start home-video Area -->
-			
+
 			<!-- End home-aboutus Area -->
 
 
 			<!-- Start home-aboutus Area -->
-			
+
 			<!-- End home-aboutus Area -->
 
 			<!-- Start video-sec Area -->
-			<section class="video-sec-area section-gap" id="videos">
+			<section class="video-sec-area section-gap" id="videos" style="background-color:cadetblue">
 				<div class="container">
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
-							<h1>Events
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 							</h1>
-							<ol>
-								<li><big><b>Codeutsav</li>
-								<li>IOT Challenge</li>
-								<li>Web Designing</li>
-								<li>Think it the Python Way!</li>
-								<li>In serch of Oracle Guru</li>
-								<li>Hit and Fix the bug</big></b></li>
-							</ol>	
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>Codeutsav</li>
+								<li style="border:1px solid white" class="list-group-item">IOT Challenge</li>
+								<li style="border:1px solid white"  class="list-group-item">Web Designing</li>
+								<li style="border:1px solid white"  class="list-group-item">Think it the Python Way!</li>
+								<li style="border:1px solid white"  class="list-group-item">In serch of Oracle Guru</li>
+								<li style="border:1px solid white"  class="list-group-item">Hit and Fix the bug</big></b></li>
+							</ul>
 							<br><br>
-							<a class="primary-btn" href="#">Register now</a>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
 						</div>
 			</section>
 			<!-- End video-sec Area -->
 
 
 			<!-- Start spekers Area -->
-			<section class="spekers-area pb-100" id="speakers">
-				<div class="container-fluid">
-					<div class="row no-padding">
-						<div class="active-speaker-carusel col-lg-12 no-padding">
-							<div class="single-speaker item">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-6 speaker-img no-padding">
-											<img src="img/coding.jpg" alt="">
-										</div>
-										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">Event 1</h6>
-											<h1 class="text-white">Codeutsav</h1>
-											<p>
-												Venue  - Mulitimedia Lab
-												Timing - 09:30 to 11:00 Am
-											</p>
-											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
-											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
-											
-										</div>
-									</div>
-								</div>								
-							</div>
-							<div class="single-speaker item">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-6 speaker-img no-padding">
-											<img src="img/s2.jpg" alt="">
-										</div>
-										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">Event 2</h6>
-											<h1 class="text-white">IOT Challenge</h1>
-											<p>
-												Venue  - CSE Library
-												Timing - 09:30 to 11:00 Am
-											</p>
-											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
-											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
-											
-										</div>
-									</div>
-								</div>								
-							</div>	
-							<div class="single-speaker item">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-6 speaker-img no-padding">
-											<img src="img/ev3.jpg" alt="">
-										</div>
-										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">Event 3</h6>
-											<h1 class="text-white">Web Designing</h1>
-											<p>
-												Venue  - MTS Lab and Multimedia Lab
-												Timing - 11:30 am to 01:00 pm
-											</p>
-											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
-											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
-											
-										</div>
-									</div>
-								</div>								
-							</div>	
-							<div class="single-speaker item">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-6 speaker-img no-padding">
-											<img src="img/py.png" alt="">
-										</div>
-										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">Event 4</h6>
-											<h1 class="text-white">Think it the Python Way!</h1>
-											<p>
-												Venue  - AI Lab
-												Timing - 11:30 am to 01:00 pm
-											</p>
-											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
-											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
-											
-										</div>
-									</div>
-								</div>								
-							</div>									
-							<div class="single-speaker item">
-								<div class="container">
-									<div class="row align-items-center">
-										<div class="col-md-6 speaker-img no-padding">
-											<img src="img/s1.jpg" alt="">
-										</div>
-										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">Event 5</h6>
-											<h1 class="text-white">In search of Oracle Guru</h1>
-											<p>
-												Venue  - MTS Lab and Multicore Lab
-												Timing - 01:30 to 03:30 pm
-											</p>
-											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
-											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
-											
-										</div>
-									</div>
-								</div>								
-							</div>	
-							<div class="single-speaker item" >
-								<div class="container" >
-									<div class="row align-items-center">
-										<div class="col-md-6 speaker-img no-padding">
-											<img src="img/bug.jpg" alt="" height="411px">
-										</div>
-										<div class="col-md-6 speaker-info no-padding" >
-											<h6 class="text-uppercase">Event 6</h6>
-											<h1 class="text-white">Hit and Fix the Bug</h1>
-											<p>
-												Venue  - Mulitimedia Lab and AI Lab
-												Timing - 01:30 to 03:30 pm
-											</p>
-											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
-											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
-											
-										</div>
-									</div>
-								</div>								
-							</div>									
-						</div>
-					</div>
-				</div>	
-			</section>
+			<section style="background-color:darkslategrey;">
+				<div class="container">
+  			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%;margin: 40px auto">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="margin-left:20%">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner"style="height:550px;box-shadow: 6px 6px 5px grey;">
+
+      <div class="item active">
+        <img src="img/coding.jpg" alt="Los Angeles" style="width:100%;height:550px;">
+        <div class="carousel-caption">
+					<h6 class="text-uppercase">Event 1</h6>
+					<h1 class="text-white">Codeutsav</h1>
+					<p>
+						Venue  - Mulitimedia Lab
+						Timing - 09:30 to 11:00 Am
+					</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/s2.jpg" alt="Chicago" style="width:100%;height:550px;">
+        <div class="carousel-caption">
+					<h6 class="text-uppercase">Event 2</h6>
+					<h1 class="text-white">IOT Challenge</h1>
+					<p>
+						Venue  - CSE Library
+						Timing - 09:30 to 11:00 Am
+					</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/ev3.jpg" alt="New York" style="width:100%;height:550px;">
+        <div class="carousel-caption">
+					<h6 class="text-uppercase">Event 3</h6>
+					<h1 class="text-white">Web Designing</h1>
+					<p>
+						Venue  - MTS Lab and Multimedia Lab
+						Timing - 11:30 am to 01:00 pm
+					</p>
+        </div>
+      </div>
+
+			<div class="item">
+				<img src="img/py.png" alt="New York" style="width:100%;height:550px;">
+				<div class="carousel-caption">
+					<h6 class="text-uppercase">Event 4</h6>
+					<h1 class="text-white">Think it the Python Way!</h1>
+					<p>
+						Venue  - AI Lab
+						Timing - 11:30 am to 01:00 pm
+					</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/s1.jpg" alt="New York" style="width:100%;height:550px;">
+				<div class="carousel-caption">
+					<h6 class="text-uppercase">Event 5</h6>
+					<h1 class="text-white">In search of Oracle Guru</h1>
+					<p>
+						Venue  - MTS Lab and Multicore Lab
+						Timing - 01:30 to 03:30 pm
+					</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="img/bug.jpg" alt="New York" style="width:100%;height:550px;">
+				<div class="carousel-caption">
+					<h6 class="text-uppercase">Event 6</h6>
+					<h1 class="text-white">Hit and Fix the Bug</h1>
+					<p>
+						Venue  - Mulitimedia Lab and AI Lab
+						Timing - 01:30 to 03:30 pm
+					</p>
+				</div>
+			</div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</section>
+
 			<!-- End spekers Area -->
-			
+
 
 			<!-- Start schedule Area -->
-			<section class="schedule-area pb-100" id="schedule">
+			<section class="schedule-area pb-100" id="schedule" style="background-color: black;color:white;">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
+					<div class="row d-flex justify-content-center" style="color:#F3CB03;">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10">Buildathon</h1>
+								<h1 class="mb-10" style="color:white;">Hackathon</h1>
 								<p>Showcase your models</p>
 							</div>
 							<ul>
-							<li><h4>Phase-I : Ideation</h4></li><p>In This Phase, We Want You To Come Up With An Idea Solution Pertaining To Your Preferred Theme. Describe Your Approach Towards Building The Solution For The Chosen Theme Problem. Briefly Describe
+							<li><h4 style="color:white;">Phase-I : Ideation</h4></li><p>In This Phase, We Want You To Come Up With An Idea Solution Pertaining To Your Preferred Theme. Describe Your Approach Towards Building The Solution For The Chosen Theme Problem. Briefly Describe
 </p>
-							<li><h4>Phase-II: Prototype Development</h4></li>
+							<li><h4 style="color:white;">Phase-II: Prototype Development</h4></li>
 							<p>In This Phase Your Deliverable Is A Working Prototype Solution For The Problem Chosen. You May Either Submit Your Work Via Your GitHub Repository Links, Or Via Uploading Zipped Folders, Along With Instructions For Creation Of Execution Environment And Running The Solution. The Solutions Will Be Executed And Judged For Their Accuracy And Experience.
 
-Besides, You Need To Submit A Write-Up Covering: 
+Besides, You Need To Submit A Write-Up Covering:
 Final Solution Design.
-Algorithm/Models Applied. 
+Algorithm/Models Applied.
 Tech Stack Used.
 Competitive Analysis And/Or Business Impact.
 A Short Video Demonstration, If Applicable.
 </p>
-							<li><h4>Phase-III:Grand Finale</h4></li><p>The Top 10 Teams Will Be Invited For The Final Round At Thiagarajar College of Engineering. The Finalists Must Present And Talk About Their Solutions Before Our Expert Judging Panel. The Final Solutions, On Submission Will Be Executed By Our Mentors And Judged For Accuracy, Scope Coverage, Usability, Experience And Novelty
+							<li><h4 style="color:white;">Phase-III:Grand Finale</h4></li><p>The Top 10 Teams Will Be Invited For The Final Round At Thiagarajar College of Engineering. The Finalists Must Present And Talk About Their Solutions Before Our Expert Judging Panel. The Final Solutions, On Submission Will Be Executed By Our Mentors And Judged For Accuracy, Scope Coverage, Usability, Experience And Novelty
 </p>
-							
+
 						</div>
-					</div>						
+					</div>
 					<div class="row">
-						<div class="table table-striped table-wrap col-lg-12">
-							<table class="schdule-table table table-bordered">
-								  <thead class="thead-light">
+						<div class="table-wrap col-lg-12">
+							<table class="schdule-table table table-bordered table-striped">
+								  <thead class="thead-dark" style="text-transform:uppercase;">
 								    <tr>
 								      <th class="head" scope="col">sl.no</th>
 								      <th class="head" scope="col">Problem Statement</th>
@@ -281,259 +287,259 @@ A Short Video Demonstration, If Applicable.
 								  <tbody>
 								    <tr>
 								      <th class="name" scope="row">01</th>
-								      <td>Stock Prices Predictor</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Stock Prices Predictor</td>
+								      <td>Machine Learning</td>
 									  <td>Predicting how the stock market will perform is one of the most difficult things to do. Business organizations and companies today are on the lookout for software that can monitor and analyze the company performance and predict future prices of various stocks. There are so many factors involved in this prediction. And with so much data available on the stock market, it is a hotbed of opportunities for data scientists with an inclination for finance. Can you use Machine Learning (ML) as a game changer in this domain?
-</td>									  
+</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">02</th>
-								      <td>Sports Predictor</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Sports Predictor</td>
+								      <td>Machine Learning</td>
 									  <td>Since there is no adequate data in the sports world, you can utilize this data to build fun and creative machine learning projects such as using college sports stats to predict which player would have the best career in which particular sports (talent scouting). You could also opt for enhancing team management by analyzing the strengths and weaknesses of the players in a team and classifying them accordingly. With the amount of sports stats and data available, this is an excellent arena to hone your data exploration and visualization skills.
 									</td>
 									</tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Sentimental Analyser</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Sentimental Analyser</td>
+								      <td>Machine Learning</td>
 								      <td> Although most of us use social media platforms to convey our personal feelings and opinions for the world to see, one of the biggest challenges lies in understanding the ‘sentiments’ behind social media posts. Social media is thriving with tons of user-generated content. By creating an ML system that could analyze the sentiment behind texts, or a post, it would become so much easier for understanding people’s behavior. You can try to mine the data from Twitter or Facebook to get started off with your sentiment analyzing machine learning project.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Recommender Chatbot</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Recommender Chatbot</td>
+								      <td>Machine Learning</td>
 								      <td>In this modern trending world people started to become smart not just by intelligence but also by technology. Nowadays people’s interaction with the chatbots has increased a lot and the question answering based chatbot system for academics,which is called Recommender based Ranking algorithm.It is needed to build a Recommender System in predicting the next possible answer to the user that is based on the user posted question.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Handwritten Digit Recognizer</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Handwritten Digit Recognizer</td>
+								      <td>Machine Learning</td>
 								      <td>Digit Recognition is of popular interest today. Given zip codes handwritten on envelops, identify the digit for each handwritten character. Developing such a system includes a machine to understand and classify the images of handwritten digits as 10 digits (0-9). A model of this problem would allow a computer program to read and understand handwritten zip codes and sort envelops by geographic region.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Face Recognition</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Face Recognition</td>
+								      <td>Machine Learning</td>
 								      <td>Facial recognition is a way of recognizing a human face through technology. It compares the information with a database of known faces to find a match. Given a digital photo album of many hundreds of digital photographs, identify those photos that include a given person. A model of this decision process would allow a program to organize photos by person.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Detecting Fake News</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Detecting Fake News</td>
+								      <td>Machine Learning</td>
 								      <td>These days fake news is creating different issues from sarcastic articles to a fabricated news. Detecting  the fake news(misleading news stories that comes from the non-reputable sources), which is a classic text classification problem. It is needed to build a model that can differentiate between REAL and FAKE news.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Predicting Weather Report</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Predicting Weather Report</td>
+								      <td>Machine Learning</td>
 								      <td>Weather Forecasting is the application of science and technology in order to predict the weather conditions. It is important for agricultural and industrial sectors. Models of Artificial Neural Networks with supervised learning paradigm are required for weather forecasting.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Diabetes Prediction</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Diabetes Prediction</td>
+								      <td>Machine Learning</td>
 								      <td> Various traditional methods, based on physical and chemical tests,are available for diagnosing diabetes.However,early prediction of diabetes is quite a challenging task.Machine Learning is an emerging scientific field in data science dealing with the ways in which machines learn from experience.The aim is to develop a system which can perform yearly prediction of diabetes for a patient with a higher accuracy by combining the results of different ML techniques.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Speech Recognition</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Speech Recognition</td>
+								      <td>Machine Learning</td>
 								      <td>The field of speech recognition adds another dimension to the problem of natural language understanding. Given an utterance from a user,identify the specific  request made by the user.A model of this problem would allow a program to understand and make an attempt to fulfil that request.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Hand Recognition</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Hand Recognition</td>
+								      <td>Machine Learning</td>
 								      <td>Hand gesture recognition is very significant for human-computer interaction. In recent years, the gesture control technique has become a new developmental trend for many human based electronics products. Propose a fast dynamic gesture recognition scheme to be an interface for the human machine interaction of systems.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Credit Card fraud detection</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Credit Card fraud detection</td>
+								      <td>Machine Learning</td>
 								      <td>The Credit card fraud detection problem includes modeling past credit card transactions with the knowledge of the ones that turned out to be fraud. The aim of this model is to detect 100% of the fraudulent transactions while minimizing the incorrect fraud classifications.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Logo detector and identify brand</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Logo detector and identify brand</td>
+								      <td>Machine Learning</td>
 								      <td>Products, companies and different gaming leagues are often recognized by their respective logos. Logo recognition in images and videos is the key problem in a wide range of applications such as copyright infringement detection, vehicle logo for intelligent traffic-control systems and others. It is required to detect and localize brand logos from the given images.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Med Bots</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Med Bots</td>
+								      <td>Machine Learning</td>
 								      <td> Today’s people are more likely addicted to internet but they are not concern about their personal health. One has to search and go personally to the hospital even for small problems which is a time consuming process. Such a problem can be solved by using medical chatbot by giving proper guidance regarding healthy living. The guidances be like.. Suggesting the respective doctors for consultation by providing their web links and providing personal health advice and wellness advice.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Spam Detection</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Spam Detection</td>
+								      <td>Machine Learning</td>
 								      <td>Given email in an inbox, identify those email messages that are spam and those that are not. Having a model of this problem would allow a program to leave non-spam emails in the inbox and move spam emails to a spam folder.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Shape Detection</td>				      
-								      <td>Machine Learning</td>	
+								      <td>Shape Detection</td>
+								      <td>Machine Learning</td>
 								      <td>Given a user hand drawing a shape on a touch screen and a database of known shapes ,determine which shape the user was trying to draw. A model of this decision would allow a program to show the platonic version of that shape the user drew to make crisp diagrams.</td>
 								    </tr>
-									
+
 									<tr>
 								      <th class="name" scope="row">04</th>
-								      <td>Sports Announcement Application</td>				      
+								      <td>Sports Announcement Application</td>
 								      <td>Web App</td>
 									  <td>Although most of us use social media platforms to convey our personal feelings and opinions for the world to see, one of the biggest challenges lies in understanding the ‘sentiments’ behind social media posts.
 And this is the perfect idea for your next machine learning project!
 Social media is thriving with tons of user-generated content. By creating an ML system that could analyze the sentiment behind texts, or a post, it would become so much easier for organizations to understand the consumer behaviour. This, in turn, would allow them to improve their customer service, thereby providing the scope for optimal consumer satisfaction.
 You can try to mine the data from Twitter or Reddit to get started off with your sentiment analyzing machine learning project.
-</td	
+</td
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">05</th>
-								      <td>Conference Hall Booking System</td>				      
-								      <td>Web App</td>	
+								      <td>Conference Hall Booking System</td>
+								      <td>Web App</td>
 									  <td>Nowadays there is an increasing number of events organized by both private and government organizations. This eventually has led to an increasing demand for the conference halls and meeting halls. So I require an application for booking halls for both the private and government organizations. This should include filter out halls on the basis of price, location (either at heart of the city or away from the city), amenities, capacity, hospitality and food availability. This should also include direction maps and live customer care support.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Online Food Ordering System</td>				      
-								      <td>Web App</td>	
+								      <td>Online Food Ordering System</td>
+								      <td>Web App</td>
 								      <td>In canteens,standing in queues have become a time consuming activity while ordering food in peak hours.Students and Faculty members can register and access the account with valid credentials. User can surf the food items according to categories, Cart and online payment options are available to user. User can track their orders with the food details.After the payment confirmation,using the generated  QR code user can get the food. If the user wishes to cancel his order, he can do it within a stipulated time period of 5 minutes or so. If he cancels beyond this time, fine is added in his next order. Admin can handle the functionalities like add new food items, edit/delete food items, Enable/Disable the food items according to season and availability. Admin have authority to view order details and update the delivery status of food. The payment transaction and user details are also viewable to admin.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Secure Online Auction System</td>				      
-								      <td>Web App</td>	
+								      <td>Secure Online Auction System</td>
+								      <td>Web App</td>
 								      <td>Online auction however is a different business model where the items are sold through price bidding. Usually bidding have start price and ending time. Price Potential buyers in auction and the winner is the one who bids the item for highest price. We treat the fraud detection with a binary classification. For buying product online user have to provide his personal details like email address, license number, PAN number etc. Only the valid user will have authority to bid. This prevents various frauds according in online shopping.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>College Forums with Alumni Based on Content Filtering</td>				      
-								      <td>Web App</td>	
+								      <td>College Forums with Alumni Based on Content Filtering</td>
+								      <td>Web App</td>
 								      <td> College Forums is online discussion group. College Forums provide a common area for students, teachers, alumni to come together and discuss unlimited topics, including social activities and educational ideas. Allowed Participants can create new threads under different categories and post them on timeline, the other registered users and admin allowed to comment, like or dislike that post. Admin have authority to accept or block the users, most likes post can be added in favourite list etc. Users can view their personal details and they have access to change their password. The main feature filtering abusive words added in comment part. If users make bad comment on other users post then that comment can be blocked by admin and not viewable on timeline. Users can sort post on timeline according to most likes or recently updated options. This System helps for managing all thread/post, replies and like from users with proper well-structured flow.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Placement/Higher Studies Management Portal</td>				      
-								      <td>Web App</td>	
+								      <td>Placement/Higher Studies Management Portal</td>
+								      <td>Web App</td>
 								      <td>Here the solution for the future confusions of the UG students. This portal provides information about each and every exams regarding placement and higher studies such as UPSC, GATE, MAT, CAT, GRE, TOFEL, etc. The information regarding the exams must be in detail such as where the exams are conducted, duration. There is a separate login for mentors who guides the students through discussion forums. Clarification of student’s doubts is ensured via Chatbot. The portal must provide questions for practising. Students can attend tests for which there must be time limit depending upon the exam and will get to know the results after evaluation by the system. For placements, the details for top companies for each and every departments must be available. Based upon the user’s frequent search in the website,  pop-ups of the updates and information of that particular exam/placement  must appear.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Search Engine Using Web Annotation</td>				      
-								      <td>Web App</td>	
+								      <td>Search Engine Using Web Annotation</td>
+								      <td>Web App</td>
 								      <td> When the user enters any word in the search engine the links, images and videos related to that should appear accordingly.  Web annotations are visible to the users. We here proposed a system where user will enter search keywords of content or image. System will match the keyword with annotation if system finds matching content or image. System will display those content and image to user.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Smart City Traveller</td>				      
-								      <td>Web App</td>	
+								      <td>Smart City Traveller</td>
+								      <td>Web App</td>
 								      <td>Here’s a chance to design the traveller’s addict. People who travel a lot, tend to know more about the place, before they visit. Once the user logins in, his interests are collected and places are displayed based on his preferences. Admin will add places with their details such as place name, image, address, area, latitude-longitude, tags and description. When he searches for a new place, the location map of that place must be displayed along with the details of the place such as name, pictures of that area, phone no and distance from current/preferred location. User can provide feedback regarding the features provided and their improvement.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>OMR Scanner And Evaluator Portal</td>				      
-								      <td>Web App</td>	
+								      <td>OMR Scanner And Evaluator Portal</td>
+								      <td>Web App</td>
 								      <td>When given an OMR filled answer sheet, it must be compared and evaluated with another correctly answered OMR sheet. The results must be displayed. Bring maximum accuracy in your evaluation.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Bulk SMS and E-Mail Sender Portal</td>				      
-								      <td>Web App</td>	
+								      <td>Bulk SMS and E-Mail Sender Portal</td>
+								      <td>Web App</td>
 								      <td>The user’s contacts are synced to the system. If the user wishes to send a bulk sms or email, he must select contacts or the previously created group of contacts. There must be templates for occasions, options to attach multimedia files and documents. There must be scheduler options to create message and send it later in a mentioned date and time in future.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Web crawler</td>				      
-								      <td>Web App</td>	
+								      <td>Web crawler</td>
+								      <td>Web App</td>
 								      <td>Develop a web crawler (or web spider) which  is an automated script that browses the World Wide Web in a methodical, automated manner.The search bot starts by crawling the pages of any site. Then it continues indexing the words and content of the site. It will finally visit the links (web page addresses or URLs) that are found in your site. When the spider doesn’t find a page, it will eventually be deleted from the index. However, some of the spiders will check again for a second time to verify that the page really is offline.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">05</th>
-								      <td>Sports Announcement Application</td>				      
-								      <td>Web App</td>	
+								      <td>Sports Announcement Application</td>
+								      <td>Web App</td>
 									  <td>There are number of sports events conducted by the government in various levels, but there is a lack of knowledge among the athletes and the common people about them. Thus, develop an application to meet this need of spreading the sports related information through an mobile based web applications. This can include all sorts of information, nearby clubs, trainer’s information etc. This should have a neat and simple interface with much functionalities.
 </td>
-									</tr>  
+									</tr>
 									<tr>
 								      <th class="name" scope="row">06</th>
-								      <td>Unified Medicine Ordering System</td>				      
-								      <td>Web App</td>	
+								      <td>Unified Medicine Ordering System</td>
+								      <td>Web App</td>
 									  <td>Nowadays people tend to order food online and get them delivered, the same goes for the medicines too. People call the pharmacies, order the required medicines and get them delivered. Develop an application thorough which they can order medicines online with correct amount of dosage and quantity along with live order tracking. The main feature required is to alert the consumers to get the correct medicines on time and the above mentioned process must be completely automated.
 </td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">07</th>
-								      <td>Unified Appointment Booking System</td>				      
+								      <td>Unified Appointment Booking System</td>
 								      <td>Web App</td>
 									  <td>There are many hospital specific applications to book an appointment for a doctor in that particular hospital. But there is no unified application to tackle this problem. Thus develop an application for booking an appointment. The system must list all the doctors available for a particular specialization, Example: Cardiology. The description about the doctor must be provided and the user must be able to book an appointment. Once this is done, after the user reaches the hospital, the user’s arrival must be authenticated at the reception in some manner. The user must also be able to view the availability of the doctor and also the laboratories near them.
 </td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">08</th>
-								      <td>Online Assignment and Exam Portal</td>				      
-								      <td>Web App</td>	
+								      <td>Online Assignment and Exam Portal</td>
+								      <td>Web App</td>
 									  <td>Develop an application through which a faculty can conduct online exams with a set of predefined templates for question paper and the faculty must be able to update their own questions and also the duration or deadline for the examination. This must be an automated process such that the results must be available to the students once the durations for that particular examination is completed. The same process applicable for assignments too. The faculty must be able to view the assignments once they pass the plagiarism checking.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">09</th>
-								      <td>Secure Password Management</td>				      
-								      <td>Web App</td>	
+								      <td>Secure Password Management</td>
+								      <td>Web App</td>
 									  <td>Develop an mobile based web application through which a user can securely store the passwords and every time they need to login into application, this app must pop-up and securely fill in the password without being compromised by malicious persons.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">10</th>
-								      <td>Event Management</td>				      
+								      <td>Event Management</td>
 								      <td>Web App</td>
 									  <td>There are number of events being conducted in each college and inmates of that college may not be aware of them, that is the events conducted by other departments,clubs and sports department of the same institution. So, develop a system through which a college management be able to post about the events in their college and find a way such that only the students of that particular college are authenticated to view them and not by the students from other institutions.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">11</th>
-								      <td>Community Builder</td>				      
+								      <td>Community Builder</td>
 								      <td>Web App</td>
 									  <td>Nowadays there are increasing number of both technical and non-technical communities all around world. But people are not aware of these communities and are not able to actively participate in the community’s meeting and activities. Thus develop a system through which people can get involved in them and also be able to communicate with one another through the discussion forums and private messages.</td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">12</th>
-								      <td>API for OTP</td>				      
+								      <td>API for OTP</td>
 								      <td>Web App</td>
 									  <td>Nowadays otp sent to the user are tapped by the malicious hackers and they perform bank transactions without the user’s knowledge. So find a way to authenticate the user without directly sending the OTP to the User and develop a cross-platform api for the same.</td>
 								    </tr>
 								    <tr>
 								      <th class="name" scope="row">13</th>
-								      <td>Virtual Reality for Shopping Experience</td>				      
+								      <td>Virtual Reality for Shopping Experience</td>
 								      <td>AR/VR</td>
 									  <td> Virtual reality technology has the power to transform the shopping experience. Build a mobile application with mixed reality technology that gives the user an immersive shopping experience. The application  the price details of the items added to the cart and stores all the orders purchased along with the customer details.
 </td>
 								     </tr>
 								    <tr>
 								      <th class="name" scope="row">14</th>
-								      <td>Training with the Trainee</td>				      
+								      <td>Training with the Trainee</td>
 								      <td>AR/VR</td>
 									  <td>Often in works involving heavy machinery or any sort of scenario, making an employee work in those without any experience is highly risk. Build a mobile application for any such scenario that helps the user to work virtually in the environment and get used to it. The application also maintains a dashboard that helps the user to check his/her performance based on the activity.</td>
 								     </tr>
 									 <tr>
 								      <th class="name" scope="row">15</th>
-								      <td>Speak with public</td>				      
-								      <td>AR/VR</td>				      
+								      <td>Speak with public</td>
+								      <td>AR/VR</td>
 								      <td> Did you know that 75% of the population apprehend the moment they will be speaking in public?  Virtual Reality on its own is a powerful tool to develop skills this soft skill by placing user into real-life situations. Develop a mobile application that helps the user to overcome the fear of public speaking and practice public speaking in different scenarios virtually.   </td>
 									 </tr>
 									 <tr>
 								      <th class="name" scope="row">16</th>
-								      <td>Travel Experience with voice command </td>				      
-								      <td>AR/VR</td>	
+								      <td>Travel Experience with voice command </td>
+								      <td>AR/VR</td>
 									  <td>Whiling travelling to a new city or town, people might miss some important sites that they were not aware of. Help the user to solve this problem with VR based mobile application that informs the user about the sites with the voice commands.
 </td>
 								     </tr>
 									<tr>
 								      <th class="name" scope="row">17</th>
-								      <td>Immensive Experience using Cloud point Data</td>				      
+								      <td>Immensive Experience using Cloud point Data</td>
 								      <td>AR/VR</td>
 									  <td>It is not easy for the people to visit all the parts of the world in their lifespan. With virtual reality, it is possible to have such an experience. Build an application that gives the user an immersive experience of visiting such places. The place can be anywhere in the world.</td>
-								     </tr> 
+								     </tr>
 								    <tr>
 								      <th class="name" scope="row">18</th>
-								      <td>360<sup>o</sup> Storytelling</td>				      
+								      <td>360<sup>o</sup> Storytelling</td>
 								      <td>AR/VR</td>
 									  <td>Let us take the way of telling stories to next level with the help of virtual reality.
 Select a theme or story of your own and build a beautiful story teller with immersive 360° experience.
@@ -541,28 +547,133 @@ Select a theme or story of your own and build a beautiful story teller with imme
 								     </tr>
 									 <tr>
 								      <th class="name" scope="row">19</th>
-								      <td>Test your Focus</td>				      
-								      <td>AR/VR</td>	
+								      <td>Test your Focus</td>
+								      <td>AR/VR</td>
 									  <td> Focusing is one of those areas, where people need to concentrate in order to succeed in any kind of work they do. Knowing how focused you are generally will help you improve self. Build a unique virtual puzzle game involving various levels that helps user to test their focusing skill. Also some maintain a dashboard, for the users helping them improve their focusing ability.</td>
 								     </tr>
-									 								    
+
 								  </tbody>
-							</table>							
+							</table>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
-			<!-- End schedule Area -->		
+			<!-- End schedule Area -->
 
 			<!-- Start price Area -->
-			
+			<section class="price-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">How Our Customers Treat Us</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+								<h1 class="package-no">01</h1>
+								<h4>Economy</h4>
+								<p>For the individuals</p>
+							</div>
+							<div class="package-list">
+								<ul>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles for interface</li>
+									<li>Reliable Customer Service</li>
+								</ul>
+							</div>
+							<div class="bottom-part">
+								<h1>£199.00</h1>
+								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+								<h1 class="package-no">02</h1>
+								<h4>Business</h4>
+								<p>For the individuals</p>
+							</div>
+							<div class="package-list">
+								<ul>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles for interface</li>
+									<li>Reliable Customer Service</li>
+								</ul>
+							</div>
+							<div class="bottom-part">
+								<h1>£199.00</h1>
+								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+								<h1 class="package-no">03</h1>
+								<h4>Premium</h4>
+								<p>For the individuals</p>
+							</div>
+							<div class="package-list">
+								<ul>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles for interface</li>
+									<li>Reliable Customer Service</li>
+								</ul>
+							</div>
+							<div class="bottom-part">
+								<h1>£199.00</h1>
+								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 single-price">
+							<div class="top-part">
+								<h1 class="package-no">04</h1>
+								<h4>Exclusive</h4>
+								<p>For the individuals</p>
+							</div>
+							<div class="package-list">
+								<ul>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles for interface</li>
+									<li>Reliable Customer Service</li>
+								</ul>
+							</div>
+							<div class="bottom-part">
+								<h1>£199.00</h1>
+								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- End price Area -->
-					
+
 			<!-- Start brand Area -->
-			
-			<!-- End brand Area -->	
-							
-				
+			<section class="brand-area section-gap">
+				<div class="container">
+					<div class="row logo-wrap">
+						<a class="col single-img" href="#">
+							<img class="d-block mx-auto" src="img/l1.png" alt="">
+						</a>
+						<a class="col single-img" href="#">
+							<img class="d-block mx-auto" src="img/l2.png" alt="">
+						</a>
+						<a class="col single-img" href="#">
+							<img class="d-block mx-auto" src="img/l3.png" alt="">
+						</a>
+						<a class="col single-img" href="#">
+							<img class="d-block mx-auto" src="img/l4.png" alt="">
+						</a>
+						<a class="col single-img" href="#">
+							<img class="d-block mx-auto" src="img/l5.png" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- End brand Area -->
+
+
 			<!-- Start callaction Area -->
 			<section class="callaction-area relative section-gap">
 				<div class="overlay overlay-bg"></div>
@@ -573,15 +684,15 @@ Select a theme or story of your own and build a beautiful story teller with imme
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
 							</p>
-							<a class="callaction-btn" href="#">Become a Member</a>							
+							<a class="callaction-btn" href="#">Become a Member</a>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End callaction Area -->
-					
 
-			<!-- start footer Area -->		
+
+			<!-- start footer Area -->
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
@@ -595,7 +706,7 @@ Select a theme or story of your own and build a beautiful story teller with imme
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								</p>								
+								</p>
 							</div>
 						</div>
 						<div class="col-lg-5  col-md-6 col-sm-6">
@@ -614,7 +725,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									</form>
 								</div>
 							</div>
-						</div>						
+						</div>
 						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
 							<div class="single-footer-widget">
 								<h6>Follow Us</h6>
@@ -626,29 +737,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<a href="#"><i class="fa fa-behance"></i></a>
 								</div>
 							</div>
-						</div>							
+						</div>
 					</div>
 				</div>
-			</footer>	
-			<!-- End footer Area -->	
-
+			</footer>
+			<!-- End footer Area -->
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="js/vendor/bootstrap.min.js"></script>
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
+  			<script src="js/easing.min.js"></script>
 			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
+			<script src="js/superfish.min.js"></script>
 			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
 			<script src="js/jquery.sticky.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>			
-			<script src="js/parallax.min.js"></script>		
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/parallax.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+			<script type="text/javascript">
+					$(document).ready(function(){
+						$('#events').mouseenter(function(){
+							$('#events').addClass('animated pulse');
+						});
+						$('#events').mouseout(function(){
+							$('#events').removeClass('animated pulse');
+						});
+					});
+
+			</script>
 		</body>
 	</html>
-
-
-
