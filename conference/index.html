@@ -75,35 +75,35 @@
 				.deptList:hover{
 					background-color:#e6ffe6;
 				}
-				.text {
-  text-align: center;
-  margin-top: 56px;
-  color: black;
-  font-size: 2.0em;
-  font-weight:bold;
-  font-family: serif;
-}
-
-.animated {
-  animation-duration: 5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-}
-
-
-
-@keyframes wobble {
-  0% {transform: translateX(0%);}
-  15% {transform: translateX(-25%) rotate(-5deg);}
-  30% {transform: translateX(20%) rotate(3deg);}
-  45% {transform: translateX(-15%) rotate(-3deg);}
-  60% {transform: translateX(10%) rotate(2deg);}
-  75% {transform: translateX(-5%) rotate(-1deg);}
-  100% {transform: translateX(0%);}
-}
-.wobble {
-  animation-name: wobble;
-}
+				.pagination{
+					display:inline-block;
+				}
+				.pagination a{
+				   color:white;
+				   float:left;
+				   padding:8px 16px;
+				   text-decoration:none;
+				 }
+				.pagination a.active{
+				  ba:#4CAF50;
+				  color:white;
+				}
+				.pagination a:hover:not(.active) {
+				background-color: #ddd;}
+				.glow {
+					color: black;
+					-webkit-animation: glow 1s ease-in-out infinite alternate;
+					-moz-animation: glow 1s ease-in-out infinite alternate;
+					animation: glow 1s ease-in-out infinite alternate;
+				}
+				@-webkit-keyframes glow {
+				from {
+				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #136c68, 0 0 40px #136c68, 0 0 50px #136c68, 0 0 60px #136c68, 0 0 70px #136c68;
+				}
+				to {
+				text-shadow: 0 0 20px #fff, 0 0 30px 	#20B2AA, 0 0 40px 	#20B2AA, 0 0 50px 	#20B2AA, 0 0 60px 	#20B2AA, 0 0 70px 	#20B2AA, 0 0 80px 	#20B2AA;
+				}
+				}
 				/* th
 				{
 					background-color: green;
@@ -128,7 +128,7 @@
 				            <ul>
 				              <li class="deptList"><a href="elements.html">ECE</a></li>
 							  <li class="deptList"><a href="#eee">EEE</a></li>
-							  <li class="deptList"><a href="elements.html">Computer Science</a></li>
+							  <li class="deptList"><a href="#cse">Computer Science</a></li>
 							  <li class="deptList"><a href="#it">Information Technology</a></li>
 							  <li class="deptList"><a href="#civil">Civil</a></li>
 				              <li class="deptList"><a href="elements.html">Mechanical</a></li>
@@ -136,7 +136,7 @@
 							  <li class="deptList"><a href="generic.html">MCA</a></li>
 				            </ul>
 				          </li> 
-				          <li><a class="ticker-btn" href="#">Register</a></li>
+				      
 				        </ul>
 				      </nav><!-- #nav-menu-container -->
 			    	</div>
@@ -182,75 +182,32 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" style="width:600px;height:540px;">
       <div class="item active">
-        <img src="img/coding.jpg" alt="Los Angeles" style="width:600px;height:540px;">
-				<div class="carousel-caption">
-				<h6 class="text-uppercase"><b>Event 1</b></h6>
-				<h1 class="text-white">Codeutsav</h1>
-				<p>
-					Venue  - Mulitimedia Lab<br>
-					Timing - 09:30 to 11:00 Am
-				</p>
-				</div>
+        <img src="img/tc.jpg" alt="Los Angeles" style="width:600px;height:540px;">
       </div>
 
       <div class="item">
         <img src="img/s2.jpg" alt="Chicago" style="width:600px;height:540px;">
-				<div class="carousel-caption">
-				<h6 class="text-uppercase"><b>Event 2</b></h6>
-				<h1 class="text-white">IOT Challenge</h1>
-				<p>
-					Venue  - CSE Library<br>
-					Timing - 09:30 to 11:00 Am
-				</p>
-				</div>
+				
       </div>
 
       <div class="item">
         <img src="img/ev3.jpg" alt="New york" style="width:600px;height:540px;">
-				<div class="carousel-caption">
-				<h6 class="text-uppercase"><b>Event 3</b></h6>
-				<h1 class="text-white">Web Designing</h1>
-				<p>
-					Venue  - MTS Lab and Multimedia Lab<br>
-					Timing - 11:30 am to 01:00 pm
-				</p>
-				</div>
+				
       </div>
 
 			<div class="item">
 				<img src="img/py.png" alt="New york" style="width:600px;height:540px;">
-				<div class="carousel-caption">
-				<h6 class="text-uppercase"><b>Event 4</b></h6>
-				<h1 class="text-white">Think it the Python Way!</h1>
-				<p>
-					Venue  - AI Lab<br>
-					Timing - 11:30 am to 01:00 pm
-				</p>
-			</div>
+				
 			</div>
 
 			<div class="item">
 				<img src="img/s1.jpg" alt="New york" style="width:600px;height:540px;">
-				<div class="carousel-caption">
-				<h6 class="text-uppercase"><b>Event 5</b></h6>
-				<h1 class="text-white">In search of Oracle Guru</h1>
-				<p>
-					Venue  - MTS Lab and Multicore Lab<br>
-					Timing - 01:30 to 03:30 pm
-				</p>
-				</div>
+				
 			</div>
 
 			<div class="item">
 				<img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;">
-				<div class="carousel-caption">
-				<h6 class="text-uppercase"><b>Event 6</b></h6>
-				<h1 class="text-white">Hit and Fix the Bug</h1>
-				<p>
-					Venue  - Mulitimedia Lab and AI Lab<br>
-					Timing - 01:30 to 03:30 pm
-				</p>
-				</div>
+				
 			</div>
     </div>
 
@@ -266,12 +223,75 @@
   </div>
 </div>
 			</section>
-
-			<section class="video-sec-area section-gap" id="videos" style="background-color:cadetblue">
-				<div class="container">
+<!-- End video-sec Area -->
+<!-- EEE-->
+			<section class="video-sec-area section-gap" id="eee" style="background-color:cadetblue">
+				<div class="container-fluid">
+				<h2 class="glow" style="align:left">Department of Electrical and Electronics Engineering</h2><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
-						<h1>Department of Computer Science and Engineering</h1>
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
+							</h1>
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>World of Control</li>
+								<li style="border:1px solid white" class="list-group-item">Digifest</li>
+								<li style="border:1px solid white"  class="list-group-item">Electricks</li>
+								<li style="border:1px solid white"  class="list-group-item">Machinoholic</li>
+								<li style="border:1px solid white"  class="list-group-item">EEE Battleground</li>
+								<li style="border:1px solid white"  class="list-group-item">Paper Presentation</big></b></li>
+							</ul>
+							<br><br>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
+						</div>
+			</section>
+			<!-- Civil-->
+			<section class="video-sec-area section-gap" id="civil" style="background-color:cadetblue">
+				<div class="container-fluid">
+				<h2 class="glow" style="align:left">Department of Civil Engineering</h2><br>
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
+							</h1>
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>Paper Presentation</li>
+								<li style="border:1px solid white" class="list-group-item">Kratos Cube</li>
+								<li style="border:1px solid white"  class="list-group-item">CAD Do</li>
+								<li style="border:1px solid white"  class="list-group-item">Potential Professor</li>
+								<li style="border:1px solid white"  class="list-group-item">Handicraft Minature</li>
+								<li style="border:1px solid white"  class="list-group-item">CiviQ</big></b></li>
+							</ul>
+							<br><br>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
+						</div>
+			</section>
+			<!--IT-->
+			<section class="video-sec-area section-gap" id="it" style="background-color:cadetblue">
+				<div class="container-fluid">
+				<h2 class="glow" style="align:left">Department of Information Technology</h2><br>
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
+							</h1>
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>Mystery Island</li>
+								<li style="border:1px solid white" class="list-group-item">Programmers Room</li>
+								<li style="border:1px solid white"  class="list-group-item">Sweep the Bugs</li>
+								<li style="border:1px solid white"  class="list-group-item">Test Drive</li>
+								<li style="border:1px solid white"  class="list-group-item">Manargial auction</li>
+								<li style="border:1px solid white"  class="list-group-item">Chain your thoughts</li>
+								<li style="border:1px solid white"  class="list-group-item">Geeks for Geeks</big></b></li>
+							</ul>
+							<br><br>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
+						</div>
+			</section>			  
+<!-- CSE-->
+<section class="video-sec-area section-gap" id="cse" style="background-color:cadetblue">
+				<div class="container-fluid">
+				<h2 class="glow" style="align:left">Department of Computer Science and Engineering</h2><br>
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+						
 							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 							</h1>
 							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
@@ -322,71 +342,6 @@
 							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
 						</div>
 			</section>
-			<!-- End video-sec Area -->
-
-
-			
-			<!-- End spekers Area -->
-<!-- EEE-->
-			<section class="video-sec-area section-gap" id="eee" style="background-color:cadetblue">
-				<div class="container">
-					<div class="row justify-content-center align-items-center ">
-						<div class="col-lg-6 video-left">
-							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
-							</h1>
-							<ul class="list-group" id='events' style="text-align:center;">
-								<li style="border:1px solid white"  class="list-group-item"><big><b>World of Control</li>
-								<li style="border:1px solid white" class="list-group-item">Digifest</li>
-								<li style="border:1px solid white"  class="list-group-item">Electricks</li>
-								<li style="border:1px solid white"  class="list-group-item">Machinoholic</li>
-								<li style="border:1px solid white"  class="list-group-item">EEE Battleground</li>
-								<li style="border:1px solid white"  class="list-group-item">Paper Presentation</big></b></li>
-							</ul>
-							<br><br>
-							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
-						</div>
-			</section>
-			<!-- Civil-->
-			<section class="video-sec-area section-gap" id="civil" style="background-color:cadetblue">
-				<div class="container">
-					<div class="row justify-content-center align-items-center ">
-						<div class="col-lg-6 video-left">
-                                                <h1>Department of Civil Engineering</h1>
-							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
-							</h1>
-							<ul class="list-group" id='events' style="text-align:center;">
-								<li style="border:1px solid white"  class="list-group-item"><big><b>Paper Presentation</li>
-								<li style="border:1px solid white" class="list-group-item">Kratos Cube</li>
-								<li style="border:1px solid white"  class="list-group-item">CAD Do</li>
-								<li style="border:1px solid white"  class="list-group-item">Potential Professor</li>
-								<li style="border:1px solid white"  class="list-group-item">Handicraft Minature</li>
-								<li style="border:1px solid white"  class="list-group-item">CiviQ</big></b></li>
-							</ul>
-							<br><br>
-							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
-						</div>
-			</section>
-			<section class="video-sec-area section-gap" id="it" style="background-color:cadetblue">
-				<div class="container">
-					<div class="row justify-content-center align-items-center ">
-						<div class="col-lg-6 video-left">
-						<h1>Department of Information Technology</h1>
-							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
-							</h1>
-							<ul class="list-group" id='events' style="text-align:center;">
-								<li style="border:1px solid white"  class="list-group-item"><big><b>Mystery Island</li>
-								<li style="border:1px solid white" class="list-group-item">Programmers Room</li>
-								<li style="border:1px solid white"  class="list-group-item">Sweep the Bugs</li>
-								<li style="border:1px solid white"  class="list-group-item">Test Drive</li>
-								<li style="border:1px solid white"  class="list-group-item">Manargial auction</li>
-								<li style="border:1px solid white"  class="list-group-item">Chain your thoughts</li>
-								<li style="border:1px solid white"  class="list-group-item">Geeks for Geeks</big></b></li>
-							</ul>
-							<br><br>
-							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
-						</div>
-			</section>			  
-
 			<!-- Start schedule Area -->
 			<section class="schedule-area pb-100" id="schedule" style="background-color: black;color:white;">
 				<div class="container">
@@ -414,9 +369,12 @@ A Short Video Demonstration, If Applicable.
 
 						</div>
 					</div>
+<!--Hackathon-->					
+					
+					
 					<div class="row">
 						<div class="table-wrap col-lg-12">
-							<table class="schdule-table table table-bordered table-striped">
+							<table class="schdule-table table table-bordered table-striped" id="pg1">
 								  <thead class="thead-dark" style="text-transform:uppercase;">
 								    <tr>
 								      <th class="head" scope="col">sl.no</th>
@@ -431,7 +389,7 @@ A Short Video Demonstration, If Applicable.
 								      <td>Stock Prices Predictor</td>
 								      <td>Machine Learning</td>
 									  <td>Predicting how the stock market will perform is one of the most difficult things to do. Business organizations and companies today are on the lookout for software that can monitor and analyze the company performance and predict future prices of various stocks. There are so many factors involved in this prediction. And with so much data available on the stock market, it is a hotbed of opportunities for data scientists with an inclination for finance. Can you use Machine Learning (ML) as a game changer in this domain?
-</td>
+									  </td>
 								    </tr>
 									<tr>
 								      <th class="name" scope="row">02</th>
@@ -488,6 +446,18 @@ A Short Video Demonstration, If Applicable.
 								      <td>Machine Learning</td>
 								      <td>The field of speech recognition adds another dimension to the problem of natural language understanding. Given an utterance from a user,identify the specific  request made by the user.A model of this problem would allow a program to understand and make an attempt to fulfil that request.</td>
 								    </tr>
+						<!--	</table>
+							<table class="schdule-table table table-bordered table-striped" id="pg2">
+								  <thead class="thead-dark" style="text-transform:uppercase;">
+								    <tr>
+								      <th class="head" scope="col">sl.no</th>
+								      <th class="head" scope="col">Problem Statement</th>
+								      <th class="head" scope="col">Theme</th>
+									  <th class="head" scope="col">Description</th>
+									</tr>
+								  </thead>
+								  <tbody>
+							-->
 									<tr>
 								      <th class="name" scope="row">11</th>
 								      <td>Hand Recognition</td>
@@ -553,6 +523,18 @@ You can try to mine the data from Twitter or Reddit to get started off with your
 								      <td>Web App</td>
 								      <td>Online auction however is a different business model where the items are sold through price bidding. Usually bidding have start price and ending time. Price Potential buyers in auction and the winner is the one who bids the item for highest price. We treat the fraud detection with a binary classification. For buying product online user have to provide his personal details like email address, license number, PAN number etc. Only the valid user will have authority to bid. This prevents various frauds according in online shopping.</td>
 								    </tr>
+							<!--	</tbody>	
+							</table>
+							<table class="schdule-table table table-bordered table-striped" id="pg3">
+								  <thead class="thead-dark" style="text-transform:uppercase;">
+								    <tr>
+								      <th class="head" scope="col">sl.no</th>
+								      <th class="head" scope="col">Problem Statement</th>
+								      <th class="head" scope="col">Theme</th>
+									  <th class="head" scope="col">Description</th>
+									</tr>
+								  </thead>
+								  <tbody>-->
 									<tr>
 								      <th class="name" scope="row">21</th>
 								      <td>College Forums with Alumni Based on Content Filtering</td>
@@ -616,6 +598,19 @@ You can try to mine the data from Twitter or Reddit to get started off with your
 									  <td>There are many hospital specific applications to book an appointment for a doctor in that particular hospital. But there is no unified application to tackle this problem. Thus develop an application for booking an appointment. The system must list all the doctors available for a particular specialization, Example: Cardiology. The description about the doctor must be provided and the user must be able to book an appointment. Once this is done, after the user reaches the hospital, the user’s arrival must be authenticated at the reception in some manner. The user must also be able to view the availability of the doctor and also the laboratories near them.
 </td>
 								    </tr>
+						<!--</tbody>
+						</table>
+							
+						<table class="schdule-table table table-bordered table-striped" id="pg4">
+								  <thead class="thead-dark" style="text-transform:uppercase;">
+								    <tr>
+								      <th class="head" scope="col">sl.no</th>
+								      <th class="head" scope="col">Problem Statement</th>
+								      <th class="head" scope="col">Theme</th>
+									  <th class="head" scope="col">Description</th>
+									</tr>
+								  </thead>
+								  <tbody>-->
 									<tr>
 								      <th class="name" scope="row">31</th>
 								      <td>Online Assignment and Exam Portal</td>
@@ -698,8 +693,15 @@ Select a theme or story of your own and build a beautiful story teller with imme
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- End schedule Area -->
+			<!--	<br>
+				<div class="pagination">
+				<a class="active"href="#pg1">1</a>
+                <a href="#pg2">2</a>
+				<a href="#pg3">3</a>
+				<a href="#pg4">4</a>
+				</div>
+			</section>-->
+			<!-- End Hackothon area -->
 
 			<!-- Start price Area -->
 		
