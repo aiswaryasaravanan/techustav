@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
@@ -72,6 +72,38 @@
 				{
 					animation-delay: 1s;
 				}
+				.deptList:hover{
+					background-color:#e6ffe6;
+				}
+				.text {
+  text-align: center;
+  margin-top: 56px;
+  color: black;
+  font-size: 2.0em;
+  font-weight:bold;
+  font-family: serif;
+}
+
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes wobble {
+  0% {transform: translateX(0%);}
+  15% {transform: translateX(-25%) rotate(-5deg);}
+  30% {transform: translateX(20%) rotate(3deg);}
+  45% {transform: translateX(-15%) rotate(-3deg);}
+  60% {transform: translateX(10%) rotate(2deg);}
+  75% {transform: translateX(-5%) rotate(-1deg);}
+  100% {transform: translateX(0%);}
+}
+.wobble {
+  animation-name: wobble;
+}
 				/* th
 				{
 					background-color: green;
@@ -83,29 +115,34 @@
 
 			  <header id="header" id="home">
 			    <div class="container">
-			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
-				        <a href="index.html"><img src="img/logo3.png" alt="" title="" width="188px" height="50px" style="border-radius: 10px;border-style: ridge;
-				        "/></a>
+				<div>
+				<div id="logo" style="float:left;">
+				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
+			    	<div class="row justify-left d-flex flex-row-reverse" style="float:right;">
+				      
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Home</a></li>
-				          <li><a href="#videos">Events</a></li>
-				          <li><a href="#speakers">Workshops</a></li>
-				          <li><a href="#schedule">Hackathon</a></li>
-				          <!--<li class="menu-has-children"><a href="">Pages</a>
+				          <li class="menu-active"><a href="#home">Home</a></li> 
+				         <li class="menu-has-children"><a href="">Departments</a>
 				            <ul>
-				              <li><a href="generic.html">Generic</a></li>
-				              <li><a href="elements.html">Elements</a></li>
+				              <li class="deptList"><a href="elements.html">ECE</a></li>
+							  <li class="deptList"><a href="#eee">EEE</a></li>
+							  <li class="deptList"><a href="elements.html">Computer Science</a></li>
+							  <li class="deptList"><a href="#it">Information Technology</a></li>
+							  <li class="deptList"><a href="#civil">Civil</a></li>
+				              <li class="deptList"><a href="elements.html">Mechanical</a></li>
+							  <li class="deptList"><a href="generic.html">Mechatronics</a></li>
+							  <li class="deptList"><a href="generic.html">MCA</a></li>
 				            </ul>
-				          </li> -->
+				          </li> 
 				          <li><a class="ticker-btn" href="#">Register</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->
 			    	</div>
+					</div>
 			    </div>
-			  </header><!-- #header -->
+			  </header> 
 
 
 			<!-- start banner Area -->
@@ -114,15 +151,14 @@
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-9 col-md-12">
-							<h6>THIAGARAJAR COLLEGE OF ENGINEERING</h6>
-							<h6><b>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</b></h6>
+							<h6><b>THIAGARAJAR COLLEGE OF ENGINEERING</b></h6>
 							<h1 class="text-white">
 								TECHUTSAV
 							</h1>
 							<div class="countdown">
 								<div id="timer" class="text-white"></div>
 							</div>
-							<h4><span class="lnr lnr-calendar-full"></span>  07th - 08th March, 2019</h4>
+							<h4><span class="lnr lnr-calendar-full"></span>  08th March, 2019</h4>
 						</div>
 					</div>
 				</div>
@@ -132,6 +168,8 @@
 				<div class="container">
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
+						<div class="text animated wobble">Department of Computer Science and Engineering</div>
+						<br><br>
 							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 							</h1>
 							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
@@ -290,7 +328,66 @@
 			</section>
 
 			<!-- End spekers Area -->
-
+<!-- EEE-->
+			<section class="video-sec-area section-gap" id="eee" style="background-color:cadetblue">
+				<div class="container">
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
+							</h1>
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>World of Control</li>
+								<li style="border:1px solid white" class="list-group-item">Digifest</li>
+								<li style="border:1px solid white"  class="list-group-item">Electricks</li>
+								<li style="border:1px solid white"  class="list-group-item">Machinoholic</li>
+								<li style="border:1px solid white"  class="list-group-item">EEE Battleground</li>
+								<li style="border:1px solid white"  class="list-group-item">Paper Presentation</big></b></li>
+							</ul>
+							<br><br>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
+						</div>
+			</section>
+			<!-- Civil-->
+			<h1>Department of Civil Engineering</h1>
+			<section class="video-sec-area section-gap" id="civil" style="background-color:cadetblue">
+				<div class="container">
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
+							</h1>
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>Paper Presentation</li>
+								<li style="border:1px solid white" class="list-group-item">Kratos Cube</li>
+								<li style="border:1px solid white"  class="list-group-item">CAD Do</li>
+								<li style="border:1px solid white"  class="list-group-item">Potential Professor</li>
+								<li style="border:1px solid white"  class="list-group-item">Handicraft Minature</li>
+								<li style="border:1px solid white"  class="list-group-item">CiviQ</big></b></li>
+							</ul>
+							<br><br>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
+						</div>
+			</section>
+			 <!-- IT-->
+			 <h1>Department of Information Technology</h1>
+			<section class="video-sec-area section-gap" id="it" style="background-color:cadetblue">
+				<div class="container">
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
+							</h1>
+							<ul class="list-group" id='events' style="text-align:center;">
+								<li style="border:1px solid white"  class="list-group-item"><big><b>Mystery Island</li>
+								<li style="border:1px solid white" class="list-group-item">Programmers Room</li>
+								<li style="border:1px solid white"  class="list-group-item">Sweep the Bugs</li>
+								<li style="border:1px solid white"  class="list-group-item">Test Drive</li>
+								<li style="border:1px solid white"  class="list-group-item">Manargial auction</li>
+								<li style="border:1px solid white"  class="list-group-item">Chain your thoughts</li>
+								<li style="border:1px solid white"  class="list-group-item">Geeks for Geeks</big></b></li>
+							</ul>
+							<br><br>
+							<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
+						</div>
+			</section>			  
 
 			<!-- Start schedule Area -->
 			<section class="schedule-area pb-100" id="schedule" style="background-color: black;color:white;">
@@ -617,7 +714,7 @@ Select a theme or story of your own and build a beautiful story teller with imme
 							<div class="single-footer-widget">
 								<h6>About Us</h6>
 								<p>
-									Spread across 143 acres, The Institution and hostels are located near Thiruparangundram on the outskrits of Madurai,8 kilometers south-west of the city Madurai. With the motto of "Vinaye yir" ,Tce aims at creating quality professionals to meet the emerging industrial and social needs through innovative teaching ,applied research and industrial interaction.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
 								</p>
 								<!-- <p class="footer-text">
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
