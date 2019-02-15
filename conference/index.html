@@ -112,9 +112,13 @@
 			</style>
 		</head>
 		<body>
-
+				<script>
+						$(document).ready(function(){
+								$(this).scrollTop(1);
+							});
+						</script>
 			  <header id="header" id="home">
-			    <div class="container">
+			    <div class="container-fluid">
 				<div>
 				<div id="logo" style="float:left;">
 				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
@@ -183,53 +187,53 @@
     <div class="carousel-inner" style="width:600px;height:540px;">
 		<div class="item active">
 		  <div class="carousel-caption">
-			  <h5 class="text-uppercase"><b>Electrical and Electronics Engineering</b></h5>
+			  <h5 class="text-uppercase"><strong>Electrical and Electronics Engineering</strong></h5>
 		  </div>
-		  <img src="img/main.jpeg" alt="Los Angeles" style="width:600px;height:540px;">
+		  <a href="#eee"><img src="img/main.jpeg" alt="Los Angeles" style="width:600px;height:540px;"></a>
 		</div>
   
 		<div class="item">
 		  <div class="carousel-caption">
-			  <h5 class="text-uppercase"><b>Electronics and Communication Engineering</b></h5>
-		  </div>
-		  <img src="img/s2.jpg" alt="Chicago" style="width:600px;height:540px;">
+			  <h5 class="text-uppercase"><strong>Electronics and Communication Engineering</strong></h5>
+			</div>
+			<a href="#ece"><img src="img/s2.jpg" alt="Chicago" style="width:600px;height:540px;"></a>
 				  
 		</div>
   
 		<div class="item">
 		  <div class="carousel-caption">
-			  <h5 class="text-uppercase"><b>Civil Engineering</b></h5>
+			  <h5 class="text-uppercase"><strong>Civil Engineering</strong></h5>
 		  </div>
-		  <img src="img/ev3.jpg" alt="New york" style="width:600px;height:540px;">
+		  <a href="#civil"><img src="img/civil.jpg" alt="New york" style="width:600px;height:540px;"></a>
 				  
 		</div>
   
 			  <div class="item">
 				  <div class="carousel-caption">
-					  <h5 class="text-uppercase"><b>Computer Science and Engineering</b></h5>
+					  <h5 class="text-uppercase"><strong>Computer Science and Engineering</strong></h5>
 				  </div>
-				  <img src="img/py.png" alt="New york" style="width:600px;height:540px;">
+				  <a href="#cse"><img src="img/py.png" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
   
 			  <div class="item">
 				  <div class="carousel-caption">
-					  <h5 class="text-uppercase"><b>Information Technology</b></h5>
+					  <h5 class="text-uppercase"><strong>Information Technology</strong></h5>
 				  </div>
-				  <img src="img/s1.jpg" alt="New york" style="width:600px;height:540px;">
+				  <a href="#it"><img src="img/s1.jpg" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
   
 			  <div class="item">
 				  <div class="carousel-caption">
-					  <h5 class="text-uppercase"><b>Mechanical Engineering</b></h5>
+					  <h5 class="text-uppercase"><strong>Mechanical Engineering</strong></h5>
 				  </div>
-				  <img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;">
+				  <a href="#mech"><img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
   
 			  <div class="item">
 					  <div class="carousel-caption">
-						  <h5 class="text-uppercase"><b>Mechatronics</b></h5>
+						  <h5 class="text-uppercase"><strong>Mechatronics</strong></h5>
 					  </div>
-					  <img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;">
+					  <a href="#mect"><img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
 	  </div>
 
@@ -255,7 +259,7 @@
 						<div class="col-lg-6 video-left">
 							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS</h1>
 							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
-								
+									<big><b>
 								<li id="boxopen26" style="border:1px solid white" class="list-group-item">
 									Event1
 								  </li>
@@ -316,7 +320,7 @@
 									specimen book. It has survived not only five centuries, but also the leap into
 									electronic typesetting,
 								  </div>
-								  
+								</b></big>
 								  
 							</ul>
 						</div>
@@ -332,7 +336,7 @@
 					<div class="col-lg-6 video-left">
 						<h1 class="animated infinite bounce" style="text-align:center;">EVENTS</h1>
 						<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
-							
+								<big><b>
 							<li id="boxopen20" style="border:1px solid white" class="list-group-item">
 								World of Control
 							  </li>
@@ -393,7 +397,7 @@
 								specimen book. It has survived not only five centuries, but also the leap into
 								electronic typesetting,
 							  </div>
-							  
+							</b></big>
 							  
 						</ul>
 					</div>
@@ -409,8 +413,8 @@
 					<div class="col-lg-6 video-left">
 						<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 						</h1>
-						<ul class="list-group" id='events' style=style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
-							
+						<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+								<big><b>
 							<li id="boxopen14" style="border:1px solid white" class="list-group-item">
 								Paper Presentation
 							  </li>
@@ -471,7 +475,7 @@
 								specimen book. It has survived not only five centuries, but also the leap into
 								electronic typesetting,
 							  </div>
-							  
+							</b></big>
 							  
 						</ul></div></div>									<br><br>
 					<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
@@ -486,6 +490,7 @@
 						<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 						</h1>
 						<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+								<big><b>
 							<li id="boxopen7" style="border:1px solid white" class="list-group-item">
 								Mystery Island
 							  </li>
@@ -556,7 +561,7 @@
 								specimen book. It has survived not only five centuries, but also the leap into
 								electronic typesetting,
 							  </div>
-							  
+							</b></big>
 						</ul></div></div>
 						<br><br>
 						<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
@@ -573,7 +578,8 @@
 				<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 				</h1>
 				<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
-					<li id='boxopen1' style="border:1px solid white" class="list-group-item"><big><b>Cryptic enigma on techbuzz</li>
+						<big><b>
+					<li id='boxopen1' style="border:1px solid white" class="list-group-item">Cryptic enigma on techbuzz</li>
 						<div  id="box1" style="font-size:14px;background-color:white;color:black;">
 						<ol>
 						<li>An individual event</li>
@@ -651,13 +657,15 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 						A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 						A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 					</div>
-					<li id='boxopen6' style="border:1px solid white"  class="list-group-item">Hit and Fix the bug</big></b></li>
+					<li id='boxopen6' style="border:1px solid white"  class="list-group-item">Hit and Fix the bug</li>
 					<div  id="box6" style="font-size:14px;background-color:white;color:black;">
 						A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 						A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 						A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 						A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 					</div>
+				</b>
+			</big>
 				</ul>
 				<br><br>
 				<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
@@ -671,7 +679,7 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 						<div class="col-lg-6 video-left">
 							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS</h1>
 							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
-								
+									<big><b>
 								<li id="boxopen33" style="border:1px solid white" class="list-group-item">
 									Event1
 								  </li>
@@ -732,7 +740,8 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 									specimen book. It has survived not only five centuries, but also the leap into
 									electronic typesetting,
 								  </div>
-								  
+								</b>
+								</big>
 								  
 							</ul>
 						</div>
@@ -741,14 +750,18 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 						<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
 						<br><br>
 			</div>
+			</div>
+		</section>
 <!-- mechatronics-->
+<section class="video-sec-area section-gap" style="background-color:cadetblue">
+		<div class="container-fluid">
 		<div id="mect">
 				<h2 class="glow" style="align:left">Department of Mechatronics</h2><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
 							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS</h1>
 							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
-								
+								<big><b>
 								<li id="boxopen39" style="border:1px solid white" class="list-group-item">
 									Anizigen
 								  </li>
@@ -795,7 +808,8 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 								  <div id="box44" style="font-size:14px;background-color:white;color:black;">
 									
 								  </div>
-								  
+								</b>
+								</big>
 								  
 							</ul>
 						</div>
@@ -1491,6 +1505,9 @@ Select a theme or story of your own and build a beautiful story teller with imme
     			});
   				});
 			});
+			
 			</script>
+			
 		</body>
+		
 	</html>
