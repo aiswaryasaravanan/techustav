@@ -131,7 +131,6 @@
   width: 400px;
   height: 300px;
   perspective: 1000px;
-	margin:auto;
 }
 
 .flip-card-inner {
@@ -147,7 +146,6 @@
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -168,13 +166,18 @@
   transform: rotateY(180deg);
   z-index: 1;
 }
+img.bg {
+    min-height: 100%;
+    min-width: 800px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+	opacity:0.5;
+}
 
-/* @media screen and (max-width: 700px) {
-	.col-md-4
-	{
-		margin:20px 20px;
-	}
-} */
+
 			</style>
 		</head>
 		<body>
@@ -190,10 +193,10 @@
 				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 			    	<div class="row justify-left d-flex flex-row-reverse" style="float:right;">
-
+				      
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Home</a></li>
+				          <li class="menu-active"><a href="#home">Home</a></li> 
 				         <li class="menu-has-children"><a href="">Departments</a>
 				            <ul>
 								<li class="deptList"><a href="#ece">ECE</a></li>
@@ -205,18 +208,18 @@
 								<li class="deptList"><a href="#mect">Mechatronics</a></li>
 								<li class="deptList"><a href="#mca">MCA</a></li>
 				            </ul>
-				          </li>
-
+				          </li> 
+				      
 				        </ul>
 				      </nav><!-- #nav-menu-container -->
 			    	</div>
 					</div>
 			    </div>
-			  </header>
+			  </header> 
 
 
 			<!-- start banner Area -->
-			<section class="banner-area relative" id="home" style="margin-bottom: 10px;">
+			<section class="banner-area relative" id="home">
 				<div class="overlay overlay-bg"></div>
 				<div class="container" style="height: 100%;">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
@@ -234,7 +237,7 @@
 				</div>
 			</section>
 			<!--
-
+			
     <ol class="carousel-indicators" style="margin-left:130px;">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -253,44 +256,44 @@
 		  </div>
 		  <a href="#eee"><img src="img/main.jpeg" alt="Los Angeles" style="width:600px;height:540px;"></a>
 		</div>
-
+  
 		<div class="item">
 		  <div class="carousel-caption">
 			  <h5 class="text-uppercase"><strong>Electronics and Communication Engineering</strong></h5>
 			</div>
 			<a href="#ece"><img src="img/s2.jpg" alt="Chicago" style="width:600px;height:540px;"></a>
-
+				  
 		</div>
-
+  
 		<div class="item">
 		  <div class="carousel-caption">
 			  <h5 class="text-uppercase"><strong>Civil Engineering</strong></h5>
 		  </div>
 		  <a href="#civil"><img src="img/civil.jpg" alt="New york" style="width:600px;height:540px;"></a>
-
+				  
 		</div>
-
+  
 			  <div class="item">
 				  <div class="carousel-caption">
 					  <h5 class="text-uppercase"><strong>Computer Science and Engineering</strong></h5>
 				  </div>
 				  <a href="#cse"><img src="img/py.png" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
-
+  
 			  <div class="item">
 				  <div class="carousel-caption">
 					  <h5 class="text-uppercase"><strong>Information Technology</strong></h5>
 				  </div>
 				  <a href="#it"><img src="img/s1.jpg" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
-
+  
 			  <div class="item">
 				  <div class="carousel-caption">
 					  <h5 class="text-uppercase"><strong>Mechanical Engineering</strong></h5>
 				  </div>
 				  <a href="#mech"><img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;"></a>
 			  </div>
-
+  
 			  <div class="item">
 					  <div class="carousel-caption">
 						  <h5 class="text-uppercase"><strong>Mechatronics</strong></h5>
@@ -312,14 +315,11 @@
 			</section>
 -->
 <!-- End video-sec Area -->
-<section style="background-image:url('img/bg.jpg');
-  background-position: center;
-  width:100%;
-	margin-bottom: 10px;
-  background-repeat: repeat-y;">
+<section class="video-sec-area section-gap" >
+<img src="img/bg1.jpg" class="bg" />
 	<div class="container-fluid">
 		<!-- ECE-->
-		<div id="ece" style="background-color:cadetblue;margin-bottom: 10px;">
+		<div id="ece">
 				<h2 class="glow" style="align:left">Department of Electronics and Communication Engineering</h2><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
@@ -387,7 +387,7 @@
 									electronic typesetting,
 								  </div>
 								</b></big>
-
+								  
 							</ul>
 						</div>
 						</div>
@@ -396,7 +396,7 @@
 						<br><br>
 			</div>
 <!-- EEE-->
-<div id="eee" style="	background-color: #A8F290;margin-bottom: 10px;">
+<div id="eee">
 			<h2 class="glow" style="align:left">Department of Electrical and Electronics Engineering</h2><br>
 				<div class="row justify-content-center align-items-center ">
 					<div class="col-lg-6 video-left">
@@ -405,30 +405,30 @@
 				</div>
 				</div>
 <div class="row">
-	<div class="col-md-4 col-sm-12" style="margin-bottom:15px;">
+	<div class="column">
 		<div class="flip-card">
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="img/eee1.png" alt="Avatar" style="width:400px;height:300px;">
 				</div>
 				<div class="flip-card-back">
-					<h2>WORLD OF CONTROL</h2>
-					<p><b>General Rules:</b> Individual entries are allowed.	The decision of evaluator is final</p>
+					<h2>WORLD OF CONTROL</h2> 
+					<p><b>General Rules:</b> Individual entries are allowed.	The decision of evaluator is final</p> 
 					<p><b>Round 1: Pen & Paper</b> - The questions shall be in the form of multiple choice,Technical puzzles etc.<br></p>
 					<p><b>Round 2: Buzzer round</b> - Team spirit of the entrants is tested by brainstorming the ideas in the buzzer round.</p>
-					<p><b>Contact number</b><br>E. S. N. Hareni - 9865258844<br>L.Denilson Jose - 9442417546</p>
+					<p><b>Contact number</b><br>E. S. N. Hareni - 9865258844<br>L.Denilson Jose - 9442417546</p>	
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4 col-sm-12" style="margin-bottom:15px;">
+	<div class="column">
 		<div class="flip-card">
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="img/eee2.png" alt="Avatar" style="width:400px;height:300px;">
 				</div>
 				<div class="flip-card-back">
-					<h2>DIGIFEST</h2>
+					<h2>DIGIFEST</h2> 
 					<p><b>RULES: </b><br>Two participants per team. <br>First round will be" Get the Digi.<br>Selected participants have to "Gaze the Images.
 					</p>
 					<p><b>Contact Number:</b></p><p>Harini.N.M - 7708595243<br>Gayathiri.R - 9790428944</p>
@@ -437,14 +437,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4 col-sm-12" style="margin-bottom:15px;">
+	<div class="column">
 		<div class="flip-card">
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="img/eee3.png" alt="Avatar" style="width:400px;height:300px;">
 				</div>
 				<div class="flip-card-back">
-					<h2>ELECTRICKS</h2>
+					<h2>ELECTRICKS</h2> 
 					<p>Mobile phones are mandatory for each group<br>
 					The first round is the basics of electronic devices and circuits will be presented in the form of connexion game individually.<br>
 					The  selected participants will answer the technical questions by arranging the blocks given, individually and hence the winners.</p>
@@ -455,30 +455,30 @@
 	</div>
 </div><br>
 <div class="row">
-	<div class="col-md-4 col-sm-12" style="margin-bottom:15px;">
+	<div class="column">
 		<div class="flip-card">
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="img/eee4.png" alt="Avatar" style="width:400px;height:300px;">
 				</div>
 				<div class="flip-card-back">
-					<h2>MACHINOVATION</h2>
-					<p>Each team should have 2 participants. Participants should not use their mobile phones </p>
+					<h2>MACHINOVATION</h2> 
+					<p>Each team should have 2 participants. Participants should not use their mobile phones </p> 
 					<p><b>1st round: (30 minutes)</b> - First round consists of 20 MCQ(1 mark),1 or 2 puzzles(5 marks).<br></p>
 					<p><b>2nd round: (20 minutes)</b> - Second round involves picking up the odd one out with justification (10 ques) from the given series.</p>
-					<p><b>Contact number</b><br>Deepika.K.M - 8220712249<br>Ferosha - 9486835201</p>
+					<p><b>Contact number</b><br>Deepika.K.M - 8220712249<br>Ferosha - 9486835201</p>	
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4 col-sm-12" style="margin-bottom:15px;">
+	<div class="column">
 		<div class="flip-card">
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="img/eee5.png" alt="Avatar" style="width:400px;height:300px;">
 				</div>
 				<div class="flip-card-back">
-					<h2>EEE Battleground</h2>
+					<h2>EEE Battleground</h2> 
 					<p>The battleground is ready!Form a duo and get the maximum kills to bag the chicken dinner! Each college is a clan. Come up with more teams and boost your clan points. Are you sure you can survive these electrical circuits?</p>
 					<p><b>Contact Number:</b></p><p>Scindiah - 9952592023<br>Hamsika - 9566782442</p>
 
@@ -486,14 +486,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4 col-sm-12" style="margin-bottom:15px;">
+	<div class="column">
 		<div class="flip-card">
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="img/eee6.png" alt="Avatar" style="width:400px;height:300px;">
 				</div>
 				<div class="flip-card-back">
-					<h2>PRESENTOVATION</h2>
+					<h2>PRESENTOVATION</h2> 
 					<p>TOPICS<br>1.Analysis and innovations in power generation<br>2.Control of environment parameter in a green house<br>3.Future scope of electrical & electronic</p>
 					<p>The abstract should be precise in IEEE format and sent to techutsav2k19eee@gmail.com on or before 03.03.2019.The team members(2 per team) are requested to send their name,college name,mail id along with abstract.
 					<p><b>Contact Number:</b></p><p>NagaNandhini.B - 7904010443,Nandhini.K - 9487528881</p>
@@ -508,7 +508,7 @@
 </div>
 <!-- Civil-->
 		<!-- Civil-->
-		<div id="civil" style="background-color:cadetblue;margin-bottom: 10px;">
+		<div id="civil">
 			<h2 class="glow" style="align:left">Department of Civil Engineering</h2><br>
 				<div class="row justify-content-center align-items-center ">
 					<div class="col-lg-6 video-left">
@@ -521,7 +521,7 @@
 							  </li>
 							  <div id="box14" style="font-size:14px;background-color:white;color:blue;font-weight:bold;font-family: Arial, Helvetica, sans-serif;">
 									<br>
-									<p style="font-size:20px;color:crimson;"><b>TECH-TALK</b>
+									<p style="font-size:20px;color:crimson;"><b>TECH-TALK</b>	
 									<b><i>‘Share your technical views...-Paper Presentation'</i></b></p>
 									<br>
 									<p style="font-size:20px;color:crimson;" >Rules:</p>
@@ -541,14 +541,14 @@
 									<p style="font-size:20px;color:crimson;">Topics to choose from:</p>
 									<br>
 									<ul style="list-style-type:disc;">
-									<li>Greener Construction Materials</li>
+									<li>Greener Construction Materials</li> 
 									<li>Earthquake resisting structures</li>
 									<li>Dynamic related experimental Techniques</li>
 									<li>Modern techniques in solid waste management and waste water treatments</li>
 									<li>Ground improvement techniques</li>
 									<li>Soil dynamics and geotechnical sustainability</li>
 									<li>Advanced construction materials</li>
-									<li>Geo environmental Engineering</li>
+									<li>Geo environmental Engineering</li> 
 									<li>Geo hazards and Risk Assessment</li>
 									<ul>
 									<br>
@@ -556,7 +556,7 @@
 									<br>
 									<ul style="list-style-type:disc;">
 										<li>Working models, samples fetch you extra points</li>
-										<li>Candidates should bring their hard and soft copy of the paper at the time of presentation.</li>
+										<li>Candidates should bring their hard and soft copy of the paper at the time of presentation.</li> 
 										<li>Make your presentation as crisp as possible.</li>
 										<li>You are allowed to expound your ideas only for about 10 minutes.</li>
 										<li>This will be followed by a 5 minutes questioning session.</li>
@@ -571,7 +571,7 @@
 									<br>
 									YUVAN SHANKAR KARTHICK S – 8973550994
 									<br>
-									SIVA SHANKARI K - 8012015359
+									SIVA SHANKARI K - 8012015359 
 									<br>
 							  </div>
 							  <li id="boxopen15" style="border:1px solid white" class="list-group-item">
@@ -625,14 +625,14 @@
 								electronic typesetting,
 							  </div>
 							</b></big>
-
+							  
 						</ul></div></div>									<br><br>
 					<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
-
+					
 					<br><br>
 				</div>
 <!--it-->
-		<div id="it"  style="	background-color: #A8F290;margin-bottom: 10px;">
+		<div id="it">
 				<h2 class="glow" style="align:left">Department of Information Technology</h2><br>
 				<div class="row justify-content-center align-items-center ">
 					<div class="col-lg-6 video-left">
@@ -716,14 +716,14 @@
 						<div class="text-center"><a class="primary-btn" href="#">Register now</a></div>
 						<br><br>
 		</div>
+		
+<!-- CSE-->		
 
-<!-- CSE-->
-
-	<div id="cse"  style="	background-color:cadetblue;margin-bottom: 10px;">
+	<div id="cse">
 	<h2 class="glow" style="align:left">Department of Computer Science and Engineering</h2><br>
 		<div class="row justify-content-center align-items-center ">
 			<div class="col-lg-6 video-left">
-
+			
 				<h1 class="animated infinite bounce" style="text-align:center;">EVENTS
 				</h1>
 				<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
@@ -749,9 +749,9 @@ The Event starts around 8 pm and ends at 9:05 pm.(time mentioned here  is for re
 The event comprises of 3 rounds which will proceed by elimination process at every round.
 
 						<br><b>I round: Technical Lexicon (MCQ ROUND)</b>
-
+					
 						<br>It is a 20 minute round.
-						<br>Glossary list will be sent to your e-mail ids.
+						<br>Glossary list will be sent to your e-mail ids. 
 						<br>Send your answers to the e-mail id specified at the end.
 						<br>Qualifying participants of the first round will be send to your e-mail id.
 						<br>Exactly after 10 minutes qualified ones would be starting off with the next round.
@@ -769,11 +769,11 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 						Again, a set of problem statements will be mailed to you.
 						Analyze the technical fault and mail your best possible solutions.
 						Answers will be judged and the winner will be notified.
-
+					
 					</div>
 					<li id='boxopen3' style="border:1px solid white"  class="list-group-item">Neo-logic</li>
 					<div  id="box3" style="font-size:14px;background-color:white;color:black;">
-						The most popular Technical event of GATES. Here we test your grip on C/C++ language.
+						The most popular Technical event of GATES. Here we test your grip on C/C++ language. 
 						There are 2 rounds in this event- prelims and finals. Details of the rounds are given below.
 						<br><b>Round 1 prelims</b><br>
 						There will 35 multiple choice questions based on c/c++ language in this round.
@@ -790,11 +790,11 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 					<li id='boxopen4' style="border:1px solid white"  class="list-group-item">Tech War</li>
 					<div  id="box4" style="font-size:14px;background-color:white;color:black;">
 						Team of 2,
-						3 rounds,
+						3 rounds, 
 						<br><b>1st round-Tech fight </b><br>
-						   Each team have 2 chances and a time of 20 min, they are given a tech topic. The team should debate other team.
+						   Each team have 2 chances and a time of 20 min, they are given a tech topic. The team should debate other team. 
 						<br><b>2nd round-
-						One to all coder</b><br>
+						One to all coder</b><br> 
 						A single problem will be given. They should code to solve it. The team that codes in many languages takes the scores.
 						<br><b>Round 3-Effective and Efficient coder</b><br>
 						A  dp prob or hard is given, time and space efficient code matters here.
@@ -822,7 +822,7 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 		</div>
 		<br/><br/>
 <!-- mechanical-->
-		<div id="mech"  style="	background-color: #A8F290;margin-bottom: 10px;">
+		<div id="mech">
 				<h2 class="glow" style="align:left">Department of Mechanical Engineering</h2><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
@@ -891,7 +891,7 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 								  </div>
 								</b>
 								</big>
-
+								  
 							</ul>
 						</div>
 						</div>
@@ -902,9 +902,9 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 			</div>
 		</section>
 <!-- mechatronics-->
-<section style="margin-bottom: 10px;">
+<section class="video-sec-area section-gap" style="background-color:cadetblue">
 		<div class="container-fluid">
-		<div id="mect"  style="background-color:cadetblue">
+		<div id="mect">
 				<h2 class="glow" style="align:left">Department of Mechatronics</h2><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
@@ -937,7 +937,7 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 								  </li>
 								  <div id="box41" style="font-size:14px;background-color:white;color:black;">
 									“Here is a nice platform for you to show your warrior attitude This is not war of evil and god, but for the great techno-minds, who design the robots”
-									With the increasing popularity of robotic combat sports such as rob wars and the battle of bots, many students think about building a fighting robot of their own.
+									With the increasing popularity of robotic combat sports such as rob wars and the battle of bots, many students think about building a fighting robot of their own. 
 									If you are crazy, you can build your own fighting machine for rob war.
 								  </div>
 								  <li id="boxopen42" style="border:1px solid white" class="list-group-item">
@@ -949,17 +949,17 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 										Paper Presentation
 								  </li>
 								  <div id="box43" style="font-size:14px;background-color:white;color:black;">
-
+									
 								  </div>
 								  <li id="boxopen44" style="border:1px solid white" class="list-group-item">
 										Hackathon
 								  </li>
 								  <div id="box44" style="font-size:14px;background-color:white;color:black;">
-
+									
 								  </div>
 								</b>
 								</big>
-
+								  
 							</ul>
 						</div>
 						</div>
@@ -970,7 +970,7 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 	</div>
 </section>
 			<!-- Start price Area -->
-
+		
 
 			<!-- start footer Area -->
 			<footer class="footer-area section-gap">
@@ -1252,7 +1252,7 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
 									console.log('as');
 									$('#box44').slideToggle();
 								});
-
+								
 
 
 
@@ -1293,9 +1293,9 @@ The event comprises of 3 rounds which will proceed by elimination process at eve
     			});
   				});
 			});
-
+			
 			</script>
-
+			
 		</body>
-
+		
 	</html>
