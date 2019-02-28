@@ -196,7 +196,7 @@ img.bg {
   font-size: 22px;
 }
 .deptList a
-{	
+{
 	color:black !important;
 }
 .coupon button {
@@ -1063,7 +1063,10 @@ Venue & Event Timings: - Open auditorium stage & 9:30-11:00</div>
 				<button onclick="on()">To know more</button>
 
 <script>
+
 function on() {
+	$('#overlay').addClass('animated zoomIn');
+	document.getElementById("overlay").style.backgroundColor = "black";
   document.getElementById("overlay").style.display = "block";
 }
 
