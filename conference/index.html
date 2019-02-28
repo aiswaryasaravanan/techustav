@@ -16,6 +16,7 @@
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>Techutsav-2019-Thiagarajar College of Engineering</title>
+		<link rel="icon" type="image/png" href="img/tcelogo.png">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,6 +38,11 @@
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
 			<style media="screen">
+			.btn-lg
+			{
+				padding: 10px;
+				border: 2px solid white;
+			}
 				.list-group-item
 				{
 					background-color:black;
@@ -239,7 +245,18 @@ img.bg {
   z-index: 2;
   cursor: pointer;padding :50px 50 px;
 }
-
+h3
+{
+	text-align: center;
+	border: 5px solid;
+	border-color: black;
+	background-color: white;
+}
+.container_box
+{
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
 #text{
   /* position: absolute; */
 	margin: 0 0 0 0;padding : 50px 50px;font-family:arial;
@@ -257,16 +274,31 @@ img.bg {
 				<script>
 						$(document).ready(function(){
 								$(this).scrollTop(1);
+
+								$(window).scroll(function(){
+									if(window.pageYOffset>300)
+									{
+										// $('#logo').hide();
+										$('#techu').css('display','inline');
+									}
+									else {
+											// $('#logo').show();
+												$('#techu').css('display','none');
+									}
+								});
 							});
 						</script>
 			  <header id="header" id="home">
 			    <div class="container-fluid">
 				<div>
-				<div id="logo" style="float:left;">
-				        <a href="index.html"><img src="img/logo4.png" style="border-radius:10px;" height="50px" alt="" title="" /></a>
-				      </div>
-			    	<div class="row justify-left d-flex flex-row-reverse" style="float:right;">
+				<!-- <div id="logo" style="float:left;">
+				        <a href="index.html"><img src="img/logo4.png" style="border-radius:10px;" height="40px" alt="" title="" /></a>
+				 </div> -->
 
+							<h1 id="techu" style="display:none;color:white;text-align:center;">TECHUTSAV</h1>
+
+
+			    	<div class="row justify-left d-flex flex-row-reverse" style="float:right;">
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="#home">Home</a></li>
@@ -275,6 +307,7 @@ img.bg {
 									<li style="cursor:pointer;color:white;margin-top:6px;" class="menu-has-children dropdown-toggle" id="d" data-toggle="dropdown"  aria-expanded="false">
     Departments
   </li>
+		<li class="menu-active"><a href="#footer">About Us</a></li>
 
   <div style="" class="dropdown-menu" aria-labelledby="d">
 		<li class="deptList"><a href="#ece">ECE</a></li>
@@ -309,10 +342,10 @@ img.bg {
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-9 col-md-12">
 							<img src="img/tcelogo.png" height="120px" width="120px;" ><br><br>
-							<h2><b>THIAGARAJAR COLLEGE OF ENGINEERING</b></h2>
-							<h5><b>(A Govnt.Aided ISO 9001:2008 certified Autonomous Institution affiliated to Anna University)</b></h5>
+							<h2><b style="-webkit-text-stroke: darkgreen;-webkit-text-stroke-width: medium;">THIAGARAJAR COLLEGE OF ENGINEERING</b></h2>
+							<h5><b >(A Govnt.Aided ISO 9001:2008 certified Autonomous Institution affiliated to Anna University)</b></h5>
 							<h5 class="text-white">WHERE QUALITY AND ETHICS MATTER</h5>
-							<h1 class="text-white">
+							<h1 class="text-white" style="    -webkit-text-stroke: maroon;-webkit-text-stroke-width: medium;">
 
 								TECHUTSAV
 							</h1>
@@ -322,7 +355,24 @@ img.bg {
 			</section>
 
 <!-- End video-sec Area -->
-<br>
+<div class="row justify-content-between" style="padding:50px;text-align: center;background-color:#04091e;">
+	<div class="col-md-4 col-sm-12 animated infinite pulse" style="margin:20px auto;height:80px;background-color:#F9CB0E;border-radius:6px;">
+		<div class="" style="padding:5px;">
+			<h4>EVENT REGISTRATION</h4>
+			<br>
+			<b style="color:red;font-size:1.3em;">RS:200</b>
+		</div>
+	</div>
+	<br>
+	<div class="col-md-4 col-sm-12 animated infinite pulse" style="margin:20px auto;height:80px;background-color:#F9CB0E;border-radius:6px;">
+		<div class=""  style="padding:5px;">
+			<h4>WORKSHOP REGISTRATION</h4>
+			<br>
+			<b style="color:red;font-size:1.3em;">RS:250</b>
+		</div>
+	</div>
+
+</div>
 <!-- <img src="img/bg1.jpg" class="bg" /> -->
 <div class="" style="background:url('img/bg1.jpg')no-repeat center fixed;margin-top:-20px;">
 	<div class="container-fluid">
@@ -334,7 +384,7 @@ img.bg {
 				<h2 class="glow" style="text-align:center;">Department of Electronics and Communication Engineering		-  18th MARCH</h2><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
-							<h1 class="animated infinite bounce" style="text-align:center;">EVENTS</h1>
+							<h1 class="animated infinite pulse" style="text-align:center;">EVENTS</h1>
 							<br><br>
 						</div>
 					</div>
@@ -345,7 +395,7 @@ img.bg {
 								<h3>LITTLETESLA</h3>
 							</div>
 					<img src="img/1_ece.jpg" height="300" style="width:100%;">
-					<div class="container" style="background-color:white">
+					<div class="container" style="background-color:#EEEEEB">
 							<h5><b></b></h5>
 							<p><b>Event Description:</b><br>
 								Innovation is critical to grow than dwealth creation in our country. Here comes an
@@ -402,7 +452,7 @@ img.bg {
 								<h3> PAPYRUS</h3>
 							</div>
 					<img src="img/2_ece.jpg" height="300" style="width:100%;">
-					<div class="container" style="background-color:white">
+					<div class="container" style="background-color:#EEEEEB">
 							<h5><b></b></h5>
 							<p><b>EventDescription:</b><br>
 								Are you a person who thinks out of box?
@@ -464,7 +514,7 @@ img.bg {
 								<h3>BUGTRONICS</h3>
 							</div>
 					<img src="img/3_ece.jpg" height="300" style="width:100%;">
-					<div class="container" style="background-color:white">
+					<div class="container" style="background-color:#EEEEEB">
 							<h5><b></b></h5>
 							<p><b>EVENT DESCRIPTION:</b><br>
 								Are you eagle eyed? It'syourturn!!!!!Spot the bug.
@@ -521,128 +571,131 @@ Note:Each component will have a specific cash point.
 						</div>
 					</div>
 
+					<div class="row justify-content-between">
+						<div class="col-md-4 col-sm-12">
+							<div class="coupon">
+								<div class="container_box">
+									<h3>TECHATHLON</h3>
+								</div>
+						<img src="img/4_ece.jpg" height="300" style="width:100%;">
+						<div class="container" style="background-color:#EEEEEB">
+								<h5><b></b></h5>
+								<p><b>Description:</b><br>
+									Torture numbers! Communicate with your subjects!
+									Logic will automatically fall in place and they will confess anything to you!
+									Come and play hide and seek with numbers and core knowledge! NO.OF.ROUNDS:2<br><br></p>
+								<div class="overlay" id="ec4_overlay">
+					<div id="text">
+						<br>
+						<button  onclick="ec4_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+							<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+						</button>
+						<br>
+						<br><b>Description:</b><br>
+						Torture numbers! Communicate with your subjects!
+									Logic will automatically fall in place and they will confess anything to you!
+									Come and play hide and seek with numbers and core knowledge! NO.OF.ROUNDS:2
+						<br><b>ROUND1:WRITTEN TEST</b><br>
+
+						Participants will be given Multiple Choice Questions* which is
+						to be solved within 30 minutes.The short listed participants will attend
+						the second round.<br> *Note:Stream1:Digital Logic Circuits.<br>
+						Stream2: Signals and Systems,Signal Processing. <br>Stream 3: Analog and Digital
+						Communication, Wireless Communication,ImageProcessing.
+						(Candidates can choose any one stream)
+
+						<br><b>ROUND2:SOFTWARE CODING</b><br>
+
+						Participants will be given two programs based on the stream
+						chosen which has to be solved within an hour.Based on the approach
+						and knowledge on programming, winners will be selected.
+
+						<br><b>RULES:</b><br>
+						1) Pre-registration is must. 2) Mobile phones are not allowed. 3)
+						Calculators are allowed. 4) Team should contain atmost 2 members.
+						<br><b>VENUE:DIGITAL SIGNAL PROCESSING LABORATORY</b>
+			</div>
+				</div>
+							<p> <button onclick="ec4_on()">To know more</button></p>
+
+				<script>
+
+				function ec4_on() {
+					$('#ec4_overlay').addClass('animated zoomIn');
+					document.getElementById("ec4_overlay").style.backgroundColor = "black";
+					document.getElementById("ec4_overlay").style.display = "block";
+				}
+
+				function ec4_off() {
+					document.getElementById("ec4_overlay").style.display = "none";
+				}
+				</script>
+							</div>
+							</div>
+						</div>
 
 					<div class="col-md-4 col-sm-12">
-						<div class="coupon">
-							<div class="container_box">
-								<h3>TECHATHLON</h3>
-							</div>
-					<img src="img/4_ece.jpg" height="300" style="width:100%;">
-					<div class="container" style="background-color:white">
-							<h5><b></b></h5>
-							<p><b>Description:</b><br>
-								Torture numbers! Communicate with your subjects!
-								Logic will automatically fall in place and they will confess anything to you!
-								Come and play hide and seek with numbers and core knowledge! NO.OF.ROUNDS:2<br><br></p>
-							<div class="overlay" id="ec4_overlay">
-			  <div id="text">
-					<br>
-					<button  onclick="ec4_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
-					  <span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
-					</button>
-					<br>
-					<br><b>Description:</b><br>
-					Torture numbers! Communicate with your subjects!
-								Logic will automatically fall in place and they will confess anything to you!
-								Come and play hide and seek with numbers and core knowledge! NO.OF.ROUNDS:2
-					<br><b>ROUND1:WRITTEN TEST</b><br>
+							<div class="coupon">
+								<div class="container_box">
+									<h3>Whizkid2K19</h3>
+								</div>
+						<img src="img/5_ece.jpg" height="300" style="width:100%;">
+						<div class="container" style="background-color:#EEEEEB">
+								<h5><b></b></h5>
+								<p>EVENT DESCRIPTION:</b><br>
+									Magic in muggle world is a serious offense and Harrys'out of business.
+									This time,the Ministry contacts 221B,Baker street for help but at rain
+									from Plat form 9-3/4 landed our Sherlock in Westeros.Join the puzzling
+									maze and unleash your mind palace.Mr and Ms Fantasy is here for the
+									Potterheads and Thronies to Revelio the Sherlock in you.</p>
+								<div class="overlay" id="ec5_overlay">
+					<div id="text">
+						<br>
+						<button  onclick="ec5_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+							<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+						</button>
+						<br>
+						<b>EVENT DESCRIPTION:</b><br>
+						Magic in muggle world is a serious offense and Harrys'out of business.
+						This time,the Ministry contacts 221B,Baker street for help but at rain
+						from Plat form 9-3/4 landed our Sherlock in Westeros.Join the puzzling
+						maze and unleash your mind palace.Mr and Ms Fantasy is here for the
+						Potterheads and Thronies to Revelio the Sherlock in you.<br>
+					<b>FORMAT:</b><br>
+					PUZZLES and MYSTERY SOLVING<br>
 
-					Participants will be given Multiple Choice Questions* which is
-					to be solved within 30 minutes.The short listed participants will attend
-					the second round.<br> *Note:Stream1:Digital Logic Circuits.<br>
-					Stream2: Signals and Systems,Signal Processing. <br>Stream 3: Analog and Digital
-					Communication, Wireless Communication,ImageProcessing.
-					(Candidates can choose any one stream)
+					<b>RULES:</b><br>
+					1)Each team should have a atmost of 2 members.<br> 2)The Judge’s decision will be final.<br>
 
-					<br><b>ROUND2:SOFTWARE CODING</b><br>
-
-					Participants will be given two programs based on the stream
-					chosen which has to be solved within an hour.Based on the approach
-					and knowledge on programming, winners will be selected.
-
-					<br><b>RULES:</b><br>
-					1) Pre-registration is must. 2) Mobile phones are not allowed. 3)
-					Calculators are allowed. 4) Team should contain atmost 2 members.
-					<br><b>VENUE:DIGITAL SIGNAL PROCESSING LABORATORY</b>
-		</div>
+					<b>VENUE:A10,A11</b><br>
 			</div>
-						<p> <button onclick="ec4_on()">To know more</button></p>
+				</div><p><button onclick="ec5_on()">To know more</button></p>
 
-			<script>
 
-			function ec4_on() {
-				$('#ec4_overlay').addClass('animated zoomIn');
-				document.getElementById("ec4_overlay").style.backgroundColor = "black";
-			  document.getElementById("ec4_overlay").style.display = "block";
-			}
+				<script>
 
-			function ec4_off() {
-			  document.getElementById("ec4_overlay").style.display = "none";
-			}
-			</script>
-						</div>
-						</div>
-					</div>
+				function ec5_on() {
+					$('<div id="ec5"></div>_overlay').addClass('animated zoomIn');
+					document.getElementById("ec5_overlay").style.backgroundColor = "black";
+					document.getElementById("ec5_overlay").style.display = "block";
+				}
 
-				<div class="col-md-4 col-sm-12">
-						<div class="coupon">
-							<div class="container_box">
-								<h3>Whizkid2K19</h3>
+				function ec5_off() {
+					document.getElementById("ec5_overlay").style.display = "none";
+				}
+				</script>
 							</div>
-					<img src="img/5_ece.jpg" height="300" style="width:100%;">
-					<div class="container" style="background-color:white">
-							<h5><b></b></h5>
-							<p>EVENT DESCRIPTION:</b><br>
-								Magic in muggle world is a serious offense and Harrys'out of business.
-								This time,the Ministry contacts 221B,Baker street for help but at rain
-								from Plat form 9-3/4 landed our Sherlock in Westeros.Join the puzzling
-								maze and unleash your mind palace.Mr and Ms Fantasy is here for the
-								Potterheads and Thronies to Revelio the Sherlock in you.</p>
-							<div class="overlay" id="ec5_overlay">
-			  <div id="text">
-					<br>
-					<button  onclick="ec5_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
-					  <span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
-					</button>
-					<br>
-					<b>EVENT DESCRIPTION:</b><br>
-					Magic in muggle world is a serious offense and Harrys'out of business.
-					This time,the Ministry contacts 221B,Baker street for help but at rain
-					from Plat form 9-3/4 landed our Sherlock in Westeros.Join the puzzling
-					maze and unleash your mind palace.Mr and Ms Fantasy is here for the
-					Potterheads and Thronies to Revelio the Sherlock in you.<br>
-        <b>FORMAT:</b><br>
-        PUZZLES and MYSTERY SOLVING<br>
-
-        <b>RULES:</b><br>
-        1)Each team should have a atmost of 2 members.<br> 2)The Judge’s decision will be final.<br>
-
-        <b>VENUE:A10,A11</b><br>
-		</div>
-			</div><p><button onclick="ec5_on()">To know more</button></p>
-
-
-			<script>
-
-			function ec5_on() {
-				$('<div id="ec5"></div>_overlay').addClass('animated zoomIn');
-				document.getElementById("ec5_overlay").style.backgroundColor = "black";
-			  document.getElementById("ec5_overlay").style.display = "block";
-			}
-
-			function ec5_off() {
-			  document.getElementById("ec5_overlay").style.display = "none";
-			}
-			</script>
+							</div>
 						</div>
-						</div>
+
 					</div>
+
 
 					<br><br>
 					<br><br>
 		</div>
 			<br>
-		<div class="text-center"><a class="btn btn-success btn-lg" href="https://goo.gl/forms/FtAVAEjTmEgHaFz23">Register now</a></div>
+		<div class="text-center" style="height:100px;"><a class="btn btn-success btn-lg" href="https://goo.gl/forms/FtAVAEjTmEgHaFz23">Register now</a></div>
 
 		</div><br><br>
 
@@ -653,7 +706,7 @@ Note:Each component will have a specific cash point.
 			<h2 class="glow" style="text-align:center;">Department of Electrical and Electronics Engineering</h2><br><br>
 				<div class="row justify-content-center align-items-center ">
 					<div class="col-lg-6 video-left">
-						<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
+						<h1 class="animated infinite pulse" style="text-align:center;">EVENTS</h1>
 						<br><br>
 				</div>
 				</div>
@@ -762,12 +815,12 @@ Note:Each component will have a specific cash point.
 
 </div>
 </div>
-
+<br>
 <div class="container-fluid">
 <div id="">
 		<div class="row justify-content-center align-items-center ">
 			<div class="col-lg-6 video-left">
-				<h1 class="animated bounce" style="text-align:center;">WORKSHOPS</h1>
+				<h1 class="animated infinite pulse" style="text-align:center;">WORKSHOPS</h1>
 				<br><br>
 			</div>
 		</div>
@@ -782,7 +835,7 @@ Note:Each component will have a specific cash point.
 			<h3>PIC Microcontroller</h3>
 		</div>
 <img src="img/pic.jpeg" height="300" style="width:100%;">
-<div class="container" style="background-color:white">
+<div class="container" style="background-color:#EEEEEB">
 		<h5><b>Hands on Training Workshop on Architecture and Programming.</b></h5>
 		<p style="color:black;">PIC Microcontroller World of Wonders.Brain of embedded System</p>
 		<p  style="color:black;">Make You Professional Microcontroller Geeks.</p>
@@ -799,10 +852,10 @@ Note:Each component will have a specific cash point.
 
 				<div class="container-fluid">
 					<div id="civil">
-        <h2 class="glow" style="align:center">Department of Civil Engineering</h2><br>
+        <h2 class="glow" style="text-align:center;">Department of Civil Engineering</h2><br>
             <div class="row justify-content-center align-items-center ">
                 <div class="col-lg-6 video-left">
-                    <h1 class="animated infinite bounce" style="text-align:center;">EVENTS</h1>
+                    <h1 class="animated infinite pulse" style="text-align:center;">EVENTS</h1>
                     <br><br>
                 </div>
             </div>
@@ -813,7 +866,7 @@ Note:Each component will have a specific cash point.
                         <h3>TECH-TALK</h3>
                     </div>
             <img src="img/1_techtalk.jpg" height="300" style="width:100%;">
-            <div class="container" style="background-color:white">
+            <div class="container" style="background-color:#EEEEEB">
                     <h5><b>‘Share your technical views...-Paper Presentation'</b></h5>
                     Topics to choose from:</b>
     • Greener Construction Materials, Earthquake resisting structures, Dynamic related experimental Techniques, Modern techniques in solid waste management and waste water treatments...
@@ -873,7 +926,7 @@ SIVA SHANKARI K - 8012015359</div>
                         <h3>CIVIQ</h3>
                     </div>
             <img src="img/2_civiq.jpg" height="300" style="width:100%;">
-            <div class="container" style="background-color:white">
+            <div class="container" style="background-color:#EEEEEB">
                     <h5><b>‘Check your IQ’</b></h5>
                     <p>Rules:
                         • A team must contain 2 members only.
@@ -932,7 +985,7 @@ SIVA SHANKARI K - 8012015359
                         <h3>BOB-THE BUILDER</h3>
                     </div>
             <img src="img/3_bobTheBuilder.jpeg" height="300" style="width:100%;">
-            <div class="container" style="background-color:white">
+            <div class="container" style="background-color:#EEEEEB">
                     <h5><b>“Build your talent in blocks”</b></h5>
                     <p>Rules:
                         • Maximum of 2 member per team.
@@ -981,112 +1034,115 @@ SIVA SHANKARI K - 8012015359
                 </div>
             </div>
 
+						<div class="row justify-content-between">
+							<div class="col-md-4 col-sm-12">
+									<div class="coupon">
+											<div class="container_box">
+													<h3>TECH-CONTINUUM</h3>
+											</div>
+							<img src="img/4_techContinuum.jpg" height="300" style="width:100%;">
+							<div class="container" style="background-color:#EEEEEB">
+											<h5><b>“Search for the Tech Treasure”</b></h5>
+											<p><b>Rules:</b>
+													• Two members per team.
+													• First team to reach the treasure will be rewarded.
+											<b>Round 1: Questionnaire </b>
+													• It is a pen and paper round.
+													• Questions will be from all domains of civil engineering...</p>
+											<div class="overlay" id="c4_overlay">
+				<div id="text">
+							<br>
+							<button  onclick="c4_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+								<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+							</button>
+							<br>
+							<br><b>Rules:</b><br>
+			• Two members per team.
+			• First team to reach the treasure will be rewarded.
+			<br><b>Round 1: Questionnaire </b><br>
+			• It is a pen and paper round.
+			• Questions will be from all domains of civil engineering.
+			<br><b>Round 2: Treasure hunt</b> <br>
+		• Series of clues will lead to another clue and ultimately lead up to a final treasure.
+			• The clues can be solved by answering certain questions in civil engineering.
+			• Requires knowledge about practical side of civil engineering such as surveying, construction materials, geo-tech, fluid mechanics, construction management etc.
+			<br><b>Contact Number:</b><br>
+	YUVAN SHANKAR KARTHICK S - 8973550994
+	SIVA SHANKARI K - 8012015359
+	</div>
+			</div>
+									<p> <button onclick="c4_on()">To know more</button></p>
 
-            <div class="col-md-4 col-sm-12">
-                <div class="coupon">
-                    <div class="container_box">
-                        <h3>TECH-CONTINUUM</h3>
-                    </div>
-            <img src="img/4_techContinuum.jpg" height="300" style="width:100%;">
-            <div class="container" style="background-color:white">
-                    <h5><b>“Search for the Tech Treasure”</b></h5>
-                    <p><b>Rules:</b>
-                        • Two members per team.
-                        • First team to reach the treasure will be rewarded.
-                    <b>Round 1: Questionnaire </b>
-                        • It is a pen and paper round.
-                        • Questions will be from all domains of civil engineering...</p>
-                    <div class="overlay" id="c4_overlay">
-      <div id="text">
-            <br>
-            <button  onclick="c4_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
-              <span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
-            </button>
-            <br>
-            <br><b>Rules:</b><br>
-    • Two members per team.
-    • First team to reach the treasure will be rewarded.
-    <br><b>Round 1: Questionnaire </b><br>
-    • It is a pen and paper round.
-    • Questions will be from all domains of civil engineering.
-    <br><b>Round 2: Treasure hunt</b> <br>
-  • Series of clues will lead to another clue and ultimately lead up to a final treasure.
-    • The clues can be solved by answering certain questions in civil engineering.
-    • Requires knowledge about practical side of civil engineering such as surveying, construction materials, geo-tech, fluid mechanics, construction management etc.
-    <br><b>Contact Number:</b><br>
-YUVAN SHANKAR KARTHICK S - 8973550994
-SIVA SHANKARI K - 8012015359
-</div>
-    </div>
-                <p> <button onclick="c4_on()">To know more</button></p>
+			<script>
 
-    <script>
+			function c4_on() {
+					$('#c4_overlay').addClass('animated zoomIn');
+					document.getElementById("c4_overlay").style.backgroundColor = "black";
+				document.getElementById("c4_overlay").style.display = "block";
+			}
 
-    function c4_on() {
-        $('#c4_overlay').addClass('animated zoomIn');
-        document.getElementById("c4_overlay").style.backgroundColor = "black";
-      document.getElementById("c4_overlay").style.display = "block";
-    }
+			function c4_off() {
+				document.getElementById("c4_overlay").style.display = "none";
+			}
+			</script>
+									</div>
+									</div>
+							</div>
 
-    function c4_off() {
-      document.getElementById("c4_overlay").style.display = "none";
-    }
-    </script>
-                </div>
-                </div>
-            </div>
-
-        <div class="col-md-4 col-sm-12">
-                <div class="coupon">
-                    <div class="container_box">
-                        <h3>CAD DO</h3>
-                    </div>
-            <img src="img/5_cadDo.jpg" height="300" style="width:100%;">
-            <div class="container" style="background-color:white">
-                    <h5><b>“Do the one you can’t do in CAD Do”</b></h5>
-                    <p><b>Rules:</b>
-                        • Individual participation.
-                    <b>Round 1: Questionnaire</b>
-                      • It is a pen and paper round.
-                    <b>Round 2: Auto-CAD
-                    </b>    • Use your CAD skills in drawing the plan...</p>
-                    <div class="overlay" id="c5_overlay">
-      <div id="text">
-            <br>
-            <button  onclick="c5_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
-              <span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
-            </button>
-            <br>
-            <b>Rules:</b><br>
-    • Individual participation.
-    <br><b>Round 1: Questionnaire</b><br>
-  • It is a pen and paper round.
-  <br><b>Round 2: Auto-CAD
-</b> <br>   • Use your CAD skills in drawing the plan.
-    •  You will be asked to auto-cad the given building as per the given guidelines within the stipulated time.
-    • Further instructions will be given on spot.
-    <br><b>Contact Number:
-</b><br>YUVAN SHANKAR KARTHICK S – 8973550994
-SIVA SHANKARI K - 8012015359
-</div>
-    </div><p><button onclick="c5_on()">To know more</button></p>
+					<div class="col-md-4 col-sm-12">
+									<div class="coupon">
+											<div class="container_box">
+													<h3>CAD DO</h3>
+											</div>
+							<img src="img/5_cadDo.jpg" height="300" style="width:100%;">
+							<div class="container" style="background-color:#EEEEEB">
+											<h5><b>“Do the one you can’t do in CAD Do”</b></h5>
+											<p><b>Rules:</b>
+													• Individual participation.
+											<b>Round 1: Questionnaire</b>
+												• It is a pen and paper round.
+											<b>Round 2: Auto-CAD
+											</b>    • Use your CAD skills in drawing the plan...</p>
+											<div class="overlay" id="c5_overlay">
+				<div id="text">
+							<br>
+							<button  onclick="c5_off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+								<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+							</button>
+							<br>
+							<b>Rules:</b><br>
+			• Individual participation.
+			<br><b>Round 1: Questionnaire</b><br>
+		• It is a pen and paper round.
+		<br><b>Round 2: Auto-CAD
+	</b> <br>   • Use your CAD skills in drawing the plan.
+			•  You will be asked to auto-cad the given building as per the given guidelines within the stipulated time.
+			• Further instructions will be given on spot.
+			<br><b>Contact Number:
+	</b><br>YUVAN SHANKAR KARTHICK S – 8973550994
+	SIVA SHANKARI K - 8012015359
+	</div>
+			</div><p><button onclick="c5_on()">To know more</button></p>
 
 
-    <script>
+			<script>
 
-    function c5_on() {
-        $('<div id="c5"></div>_overlay').addClass('animated zoomIn');
-        document.getElementById("c5_overlay").style.backgroundColor = "black";
-      document.getElementById("c5_overlay").style.display = "block";
-    }
+			function c5_on() {
+					$('<div id="c5"></div>_overlay').addClass('animated zoomIn');
+					document.getElementById("c5_overlay").style.backgroundColor = "black";
+				document.getElementById("c5_overlay").style.display = "block";
+			}
 
-    function c5_off() {
-      document.getElementById("c5_overlay").style.display = "none";
-    }
-    </script>
-                </div>
-                </div>
-            </div>
+			function c5_off() {
+				document.getElementById("c5_overlay").style.display = "none";
+			}
+			</script>
+									</div>
+									</div>
+							</div>
+
+
+						</div>
 
 
 
@@ -1098,7 +1154,7 @@ SIVA SHANKARI K - 8012015359
 				<div id="">
 						<div class="row justify-content-center align-items-center ">
 							<div class="col-lg-6 video-left">
-								<h1 class="animated bounce" style="text-align:center;">WORKSHOPS</h1>
+								<h1 class="animated infinite pulse" style="text-align:center;">WORKSHOPS</h1>
 								<br><br>
 							</div>
 						</div>
@@ -1113,7 +1169,7 @@ SIVA SHANKARI K - 8012015359
 							<h3>BIM Software</h3>
 						</div>
 				<img src="img/bim.jpg" height="300" style="width:100%;">
-				<div class="container" style="background-color:white">
+				<div class="container" style="background-color:#EEEEEB">
 						<h5><b>Enhance Your Employabilty Skills through BIM Software</b></h5>
 						<p style="color:black;">The Workshop is conducted jointly with Bentley Institute and ARK Info Solutions</p>
 						<p  style="color:black;">The Budding Civil Engineers will get a glimpse of software usage in Civil Engineerning.</p>
@@ -1135,7 +1191,7 @@ SIVA SHANKARI K - 8012015359
 				<h2 class="glow" style="text-align:center;">Department of Information Technology</h2><br><br>
 				<div class="row justify-content-center align-items-center ">
 					<div class="col-lg-6 video-left">
-						<h1 class="animated bounce" style="text-align:center;">EVENTS
+						<h1 class="animated infinite pulse" style="text-align:center;">EVENTS
 						</h1>
 						<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
 								<big><b>
@@ -1143,7 +1199,7 @@ SIVA SHANKARI K - 8012015359
 							  <li id="boxopen8" style="border:1px solid white" class="list-group-item">
 								Programmers Room
 							  </li>
-							  <div id="box8" style="font-size:14px;background-color:white;color:black;">
+							  <div id="box8" style="font-size:14px;background-color:#EEEEEB;color:black;">
 								<b>‘ Truth can only be found in one place, the code ..! '</b>
 								Two per team
 <b>Round 1:</b> Test your programming ability and to survive in this room you have to code hard .! 
@@ -1156,7 +1212,7 @@ Shanmuga priyan -9087512951  priya vinitha-9600882174
 							  <li id="boxopen9" style="border:1px solid white" class="list-group-item">
 								Sweep the Bugs
 							  </li>
-								<div id="box9" style="font-size:14px;background-color:white;color:black;">
+								<div id="box9" style="font-size:14px;background-color:#EEEEEB;color:black;">
 									<b>‘Think beyond the “hello world” phase’ </b>
 							    • Debugging requires a level patience and skill that escapes ordinary programmers. Think you are up to it? Why doubt when you can find out ! 
 <br><b>General Rules</b><br>
@@ -1171,7 +1227,7 @@ Hariharan - 9600534571,  Avinashkumar–8056072506, Sruthi Mai - 77085 63434.
 							  <li id="boxopen10" style="border:1px solid white" class="list-group-item">
 								Test Drive
 							  </li>
-							  <div id="box10" style="font-size:14px;background-color:white;color:black;">
+							  <div id="box10" style="font-size:14px;background-color:#EEEEEB;color:black;">
 								<b>Be the Better You, Be the revolution that the market needs. Be ready. Be smart. Be noticed!
 
 									“Before you are a leader, success is all about growing yourself. When you become a leader, success is all about growing others.” – Jack Welch.
@@ -1194,7 +1250,7 @@ Vandna -7530021183
 							  <li id="boxopen11" style="border:1px solid white" class="list-group-item">
 								Manargial auction
 							  </li>
-							  <div id="box11" style="font-size:14px;background-color:white;color:black;">
+							  <div id="box11" style="font-size:14px;background-color:#EEEEEB;color:black;">
 								<b>"Can you hold your horses? Can you spend your money right?"</b><br>
 								<b>General Rules</b><br>
     • 3-4 per team
@@ -1212,7 +1268,7 @@ Gunaseelan - 9965177721
 							  <li id="boxopen12" style="border:1px solid white" class="list-group-item">
 								Chain your thoughts
 							  </li>
-							  <div id="box12" style="font-size:14px;background-color:white;color:black;">
+							  <div id="box12" style="font-size:14px;background-color:#EEEEEB;color:black;">
 								<b>‘Deep dive into your hidden insights... '</b>
 								Chain your thoughts is an event, where participants put on their thinking caps and compete to become the Master Connector. It isn’t about what you think, but how do you think.
 <br><b>Rules:</b><br>
@@ -1248,12 +1304,12 @@ Subhiksha:      75983 29064
 		<div class="row justify-content-center align-items-center ">
 			<div class="col-lg-6 video-left">
 
-				<h1 class="animated bounce" style="text-align:center;">EVENTS
+				<h1 class="animated infinite pulse" style="text-align:center;">EVENTS
 				</h1>
-				<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+				<ul class="list-group" id='events1' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
 						<big><b>
 					<li id='boxopen1' style="border:1px solid white" class="list-group-item">Cryptic enigma</li>
-						<div  id="box1" style="font-size:14px;background-color:white;color:black;">
+						<div  id="box1" style="font-size:14px;background-color:#EEEEEB;color:black;">
 						<p><b> General Rules </b><br>
 Individual entry<br>
 The decision of evaluator is final<br>
@@ -1266,7 +1322,7 @@ The decision of evaluator is final<br>
 </p>
 						</div>
 					<li id='boxopen2' style="border:1px solid white" class="list-group-item">In Search of Oracle Guru</li>
-					<div  id="box2" style="font-size:14px;background-color:white;color:black;">
+					<div  id="box2" style="font-size:14px;background-color:#EEEEEB;color:black;">
 						<b>General Rules</b><br>
 						<ul>
 						<li>Individual entry</li>
@@ -1281,7 +1337,7 @@ Database will be given ,you should query the necessary data and finish your obje
 
 					</div>
 					<li id='boxopen3' style="border:1px solid white"  class="list-group-item">Neo-logic</li>
-					<div  id="box3" style="font-size:14px;background-color:white;color:black;">
+					<div  id="box3" style="font-size:14px;background-color:#EEEEEB;color:black;">
 						<b>General Rules</b>
 There are 2 person in each team.(individual participation is also allowed)<br>
 The decision of evaluator is final<br>
@@ -1302,7 +1358,7 @@ Winners will be selected on the basis of no. of questions solved, logic used and
 
 					</div>
 					<li id='boxopen4' style="border:1px solid white"  class="list-group-item">The Linux Challenge</li>
-					<div  id="box4" style="font-size:14px;background-color:white;color:black;">
+					<div  id="box4" style="font-size:14px;background-color:#EEEEEB;color:black;">
 					<b>General Rules</b><br>
 Individual entry<br>
 The decision of evaluator is final<br>
@@ -1315,7 +1371,7 @@ The number of participants selected for this round will depend on number of part
 
 					</div>
 					<li id='boxopen5' style="border:1px solid white"  class="list-group-item">Infinity Tech War</li>
-					<div  id="box5" style="font-size:14px;background-color:white;color:black;">
+					<div  id="box5" style="font-size:14px;background-color:#EEEEEB;color:black;">
 				<b>General Rules</b><br>
 Team event<br>
 Team size is two<br>
@@ -1343,13 +1399,13 @@ The team that codes in many languages takes the scores,time and space efficient 
 				<h2 class="glow" style="text-align:center;">Department of Mechanical Engineering</h2><br><br>
 					<div class="row justify-content-center align-items-center ">
 						<div class="col-lg-6 video-left">
-							<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
-							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+							<h1 class="animated infinite pulse" style="text-align:center;">EVENTS</h1>
+							<ul class="list-group" id='events2' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
 							<b><big>
 								<li id="boxopen33" style="border:1px solid white" class="list-group-item">
 								PRO QUIZ
 								  </li>
-								  <div id="box33" style="font-size:14px;background-color:white;color:black;">
+								  <div id="box33" style="font-size:14px;background-color:#EEEEEB;color:black;">
 									It consists of three rounds which tests the participants’ knowledge in mechanical engineering concepts.
 									Round 1- MCQs
 									Round 2- Rapid Fire
@@ -1363,7 +1419,7 @@ The team that codes in many languages takes the scores,time and space efficient 
 								  <li id="boxopen34" style="border:1px solid white" class="list-group-item">
 										MR.WELDER
 								  </li>
-								  <div id="box34" style="font-size:14px;background-color:white;color:black;">
+								  <div id="box34" style="font-size:14px;background-color:#EEEEEB;color:black;">
 										Two per team
 
 
@@ -1379,7 +1435,7 @@ Shoes should be worn compulsorily.Surface preparations should be done properly a
 								  <li id="boxopen35" style="border:1px solid white" class="list-group-item">
 											PRO-MODELLING
 								  </li>
-								  <div id="box35" style="font-size:14px;background-color:white;color:black;">
+								  <div id="box35" style="font-size:14px;background-color:#EEEEEB;color:black;">
 										Two per team
 										Data will be provided and no external use of materials will be allowed.
 										Testing and analyzing the model using Creo software
@@ -1406,10 +1462,10 @@ Shoes should be worn compulsorily.Surface preparations should be done properly a
 <section class="video-sec-area section-gap" >
 		<div class="container-fluid">
 <div id="mect">
-			<h2 class="glow" style="align:center">Department of Mechatronics</h2><br>
+			<h2 class="glow" style="text-align:center">Department of Mechatronics</h2><br>
 				<div class="row justify-content-center align-items-center ">
 					<div class="col-lg-6 video-left">
-						<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
+						<h1 class="animated infinite pulse" style="text-align:center;">EVENTS</h1>
 						<br><br>
 					</div>
 				</div>
@@ -1421,7 +1477,7 @@ Shoes should be worn compulsorily.Surface preparations should be done properly a
 					<h3>ROBO PRIX</h3>
 				</div>
 		<img src="http://robohub.org/wp-content/uploads/2014/03/High_Res_NAO_NextGen_05-1024x683.jpg" height="300" style="width:100%;">
-		<div class="container" style="background-color:white">
+		<div class="container" style="background-color:#EEEEEB">
 				<h5><b>Fascinated of racing? Hunting for an opportunity? “Bring your Bot, Bag the prize.”</b></h5>
 				<p style="color:black;">We provide you a track to open your enthusiasm. The robot completing the race within the shortest time, overcoming obstacles of all the laps will be declared as winner</p>
 				<div id="overlay" class="overlay">
@@ -1462,7 +1518,7 @@ Venue & Event Timings: - Open auditorium stage & 9:30-11:00</div>
     <h3>ROBO WAR</h3>
   </div>
   <img src="http://aumtechnicia.in/wp-content/uploads/2018/12/robo-war.jpg" height="300" style="width:100%;">
-  <div class="container" style="background-color:white">
+  <div class="container" style="background-color:#EEEEEB">
     <h5><b>“Here is a nice platform for you to show your warrior attitude This is not war of evil and god, but for the great techno-minds, who design the robots”</b></h5>
     <p style="color:black;">Many students think about building a fighting robot of their own. If you are crazy, you can build your own fighting machine for rob war.</p>
 	<div id="overlay1" class="overlay">
@@ -1512,7 +1568,7 @@ Contact Number: -
     <h3>ANZIGEN</h3>
   </div>
   <img src="img/rob.jpg" height="300" style="width:100%;">
-  <div class="container" style="background-color:white">
+  <div class="container" style="background-color:#EEEEEB">
     <h5><b><br>“Show your work and Impress us”</b></h5>
     <p style="color:black;">Projects on the following fields are invited, Mechanical, Electrical & Electronics, Automation and Robotics.
 Also, any other innovative projects relevant to Mechatronics domain will be accepted</p>
@@ -1545,166 +1601,171 @@ Contact Number: -<br>
 	</div>
   </div>
   </div>
-  <div class="col-md-4 col-sm-12">
-  <div class="coupon">
-    <div class="container_box">
-    <h3>CHUTES AND LADDER</h3>
-  </div>
-  <img src="img/rob1.jpg" height="300" style="width:100%;">
-  <div class="container" style="background-color:white">
-    <h5><b>Description:</b></h5>
-    <p style="color:black;">Participate in the life-sized version of the classic board game that
-everyone has inevitably played as a child! Roll the colossal dice, and get ready
-to maneuver your way through the map by answering technical, general or
-riddle-based question every time you encounter a snake or a ladder.</p>
-	<div id="overlay3" class="overlay">
-  <div id="text">
-		<br>
-		<button  onclick="off3()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
-  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
-		</button>
-		<BR><BR>
-		Team event: Max. 3 per team<br>
-Rounds: -<br>
-Round 1: Will be a typical snake and ladder game. Based on the number in the
-rolled die, Questions will be asked. Either technical or logical or a riddle.<br>
-Round 2: Movie connect. Movies that depict upcoming technologies are used
-here. A snap from the movie will be given and the team has to be creative in
-predicting the usage of the similar technology shown in the picture in real
-world.<br>
-Round 3: Tech Congress. Here a debate or headed argument is set between two
-teams. The team which dominates the other will be crowned as the ultimate
-winner.<br>
-Note: Eliminations will be there at the end of each round.<br>
-Registration: -
-Pre-Registration or On-line.<br>
-Venue & Event Timings: - S4 hall & 10:00-11:30<br>
-Prize Money: -<br>
-1st Prize - Rs. 3,000<br>
-2nd Prize - Rs. 2,000<br>
-3rd Prize - Rs. 1,000<br>
-Contact Number: -<br>
-1. Chendur Rakesh: 77084-57497<br>
-2. Thilak Pranal: 99402-71659
-</div></div>
-	<p><button onclick="on3()">To know more</button></p>
+	<div class="row justify-content-between">
+		<div class="col-md-4 col-sm-12">
+		<div class="coupon">
+			<div class="container_box">
+			<h3>CHUTES AND LADDER</h3>
+		</div>
+		<img src="img/rob1.jpg" height="300" style="width:100%;">
+		<div class="container" style="background-color:#EEEEEB;height:326px;">
+			<h5><b>Description:</b></h5>
+			<p style="color:black;">Participate in the life-sized version of the classic board game that
+	everyone has inevitably played as a child! Roll the colossal dice, and get ready
+	to maneuver your way through the map by answering technical, general or
+	riddle-based question every time you encounter a snake or a ladder.</p>
+		<div id="overlay3" class="overlay">
+		<div id="text">
+			<br>
+			<button  onclick="off3()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+				<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+			</button>
+			<BR><BR>
+			Team event: Max. 3 per team<br>
+	Rounds: -<br>
+	Round 1: Will be a typical snake and ladder game. Based on the number in the
+	rolled die, Questions will be asked. Either technical or logical or a riddle.<br>
+	Round 2: Movie connect. Movies that depict upcoming technologies are used
+	here. A snap from the movie will be given and the team has to be creative in
+	predicting the usage of the similar technology shown in the picture in real
+	world.<br>
+	Round 3: Tech Congress. Here a debate or headed argument is set between two
+	teams. The team which dominates the other will be crowned as the ultimate
+	winner.<br>
+	Note: Eliminations will be there at the end of each round.<br>
+	Registration: -
+	Pre-Registration or On-line.<br>
+	Venue & Event Timings: - S4 hall & 10:00-11:30<br>
+	Prize Money: -<br>
+	1st Prize - Rs. 3,000<br>
+	2nd Prize - Rs. 2,000<br>
+	3rd Prize - Rs. 1,000<br>
+	Contact Number: -<br>
+	1. Chendur Rakesh: 77084-57497<br>
+	2. Thilak Pranal: 99402-71659
+	</div></div>
+		<p><button style="margin-top:60px;"onclick="on3()">To know more</button></p>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="col-md-4 col-sm-12">
+		<div class="coupon">
+			<div class="container_box">
+			<h3>MAZE RUNNER</h3>
+		</div>
+		<img src="img/rob.jpg" height="300" style="width:100%;">
+		<div class="container" style="background-color:#EEEEEB">
+			<h5><b>Description:</b></h5>
+			<p style="color:black;">A mobile robot should be made which can solve a maze with shortest
+	path on its own. Maze walls will be of height 10cm from ground. Path width
+
+	size will be of 25cm. Optimum robot width should be up to 15cm although it’s
+	up to the participant’s wish. Robot should be of autonomous operations with its
+	own battery. The robot which completes the maze in less duration will be
+	announced the winner.</p>
+		<div id="overlay4" class="overlay">
+		<div id="text">
+			<br>
+			<button  onclick="off4()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+				<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+			</button>
+			<BR><BR>
+			Team event: Max. 2 per team<br>
+	RULES: <br>
+	1. Robot should be of AUTONOMOUS OPERATION and no human
+	controls should be given. If found participant will be disqualified.<br>
+	2. Robot cannot be shared between teams. Every team must bring their own
+	robot.<br>
+	3. Turn radius can be of any degree within 180.<br>
+	4. Robot can be of any size said it can fit between maze walls.<br>
+	5. No wireless communication allowed. Robot should not send or receive
+	any data to any other nearby devices.<br>
+	6. All the components should be within the robot itself including the
+	batteries required to operate.<br>
+	7. Components place cannot be changed once the event starts.<br>
+	8. The robot should complete two rounds of the event with its single charge
+	of the battery, no charging in between will be allowed. Select an
+	appropriate battery size.<br>
+	9. The robot can be reset to its original start position if participants requires
+	but the time will not be reset.<br>
+	10. Maze may be provided for testing the robot.<br>
+	11. Maze can be altered if the Judges/Organizers requires to do so at any
+	period of time.<br>
+	12. Final decisions are up to the Judges/Organizers. Nothing to discuss<br>
+
+	ROUNDS: -<br>
+	Round 1: Robot can explore the maze recording the maze and
+	calculating the shortest path<br>
+
+	Round 2: Robot can solve the maze with the shortest path as fast as
+
+	possible<br>
+
+	ARENA: -
+
+	*total time includes both the rounds
+	*Points calculation will be announced on spot
+
+	1. Maze will be of 5m x 5m square
+	2. Maze consists of multiple path in which only some of them leads to
+	the end.Among them only one will be of shortest path
+	3. Maze wall will be of 10cm from the ground, place the sensors
+	appropriately
+	4. Width of the path will be 25cm, make sure to fit your bot within 15cm
+	for optimum space between walls for moving
+	5. A test maze may be provided for the participants before event starts.
+	*Test maze need not to be the same as competing maze. Although it
+	can be.
+	*Organizers/Judges can alter the maze at any time.<br>
+
+	Registration:
+	Pre-Registration or On-line.
+	Venue & Event Timings: - S3 hall & 11:30-01:00<br>
+	Prize Money: -<br>
+	1st Prize - Rs. 3,000<br>
+	2nd Prize - Rs. 2,000<br>
+	3rd Prize - Rs. 1,000<br>
+	Contact Number: -<br>
+	1.Akash: 97862-33883
+	</div></div>
+		<p><button onclick="on4()">To know more</button></p>
+	 </div>
+	 </div>
+	 </div>
+
+
+	</div>
+
+
+
+
  </div>
  </div>
  </div>
- <div class="col-md-4 col-sm-12">
-  <div class="coupon">
-    <div class="container_box">
-    <h3>MAZE RUNNER</h3>
-  </div>
-  <img src="img/rob.jpg" height="300" style="width:100%;">
-  <div class="container" style="background-color:white">
-    <h5><b>Description:</b></h5>
-    <p style="color:black;">A mobile robot should be made which can solve a maze with shortest
-path on its own. Maze walls will be of height 10cm from ground. Path width
-
-size will be of 25cm. Optimum robot width should be up to 15cm although it’s
-up to the participant’s wish. Robot should be of autonomous operations with its
-own battery. The robot which completes the maze in less duration will be
-announced the winner.</p>
-	<div id="overlay4" class="overlay">
-  <div id="text">
-		<br>
-		<button  onclick="off4()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
-  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
-		</button>
-		<BR><BR>
-		Team event: Max. 2 per team<br>
-RULES: <br>
-1. Robot should be of AUTONOMOUS OPERATION and no human
-controls should be given. If found participant will be disqualified.<br>
-2. Robot cannot be shared between teams. Every team must bring their own
-robot.<br>
-3. Turn radius can be of any degree within 180.<br>
-4. Robot can be of any size said it can fit between maze walls.<br>
-5. No wireless communication allowed. Robot should not send or receive
-any data to any other nearby devices.<br>
-6. All the components should be within the robot itself including the
-batteries required to operate.<br>
-7. Components place cannot be changed once the event starts.<br>
-8. The robot should complete two rounds of the event with its single charge
-of the battery, no charging in between will be allowed. Select an
-appropriate battery size.<br>
-9. The robot can be reset to its original start position if participants requires
-but the time will not be reset.<br>
-10. Maze may be provided for testing the robot.<br>
-11. Maze can be altered if the Judges/Organizers requires to do so at any
-period of time.<br>
-12. Final decisions are up to the Judges/Organizers. Nothing to discuss<br>
-
-ROUNDS: -<br>
-Round 1: Robot can explore the maze recording the maze and
-calculating the shortest path<br>
-
-Round 2: Robot can solve the maze with the shortest path as fast as
-
-possible<br>
-
-ARENA: -
-
-*total time includes both the rounds
-*Points calculation will be announced on spot
-
-1. Maze will be of 5m x 5m square
-2. Maze consists of multiple path in which only some of them leads to
-the end.Among them only one will be of shortest path
-3. Maze wall will be of 10cm from the ground, place the sensors
-appropriately
-4. Width of the path will be 25cm, make sure to fit your bot within 15cm
-for optimum space between walls for moving
-5. A test maze may be provided for the participants before event starts.
-*Test maze need not to be the same as competing maze. Although it
-can be.
-*Organizers/Judges can alter the maze at any time.<br>
-
-Registration:
-Pre-Registration or On-line.
-Venue & Event Timings: - S3 hall & 11:30-01:00<br>
-Prize Money: -<br>
-1st Prize - Rs. 3,000<br>
-2nd Prize - Rs. 2,000<br>
-3rd Prize - Rs. 1,000<br>
-Contact Number: -<br>
-1.Akash: 97862-33883
-</div></div>
-	<p><button onclick="on4()">To know more</button></p>
- </div>
- </div>
- </div>
 
 
 
-
- </div>
- </div>
- </div>
+ 							<br><br>
+ 						<div class="text-center"><a class="btn btn-success btn-lg" href=" https://goo.gl/forms/NjLXr8Xll2XCNdsj1">Register now</a></div>
+ 						<br><br>
 </section>
 
 
 
-
-
-							<br><br>
-						<div class="text-center"><a class="btn btn-success btn-lg" href=" https://goo.gl/forms/NjLXr8Xll2XCNdsj1">Register now</a></div>
-						<br><br>
 			</div>
 	</div>
 		<!-- Start price Area -->
 
 
 			<!-- start footer Area -->
-			<footer class="footer-area section-gap">
-				<div class="container">
+			<footer id="footer" class="footer-area section-gap" style="border-radius:85px;">
+				<div class="container-fluid" >
 					<div class="row">
 						<div class="col-lg-5 col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>About Us</h6>
 								<p>
-									Spread across 143 acres, The Institution and hostels are located near Thiruparangundram on the outskrits of Madurai,8 kilometers south-west of the city Madurai. With the motto of "Vinaye yir" ,Tce aims at creating quality professionals to meet the emerging industrial and social needs through innovative teaching ,applied research and industrial interaction.
+									Spread across 143 acres, The Institution and hostels are located near Thiruparangundram on the outskrits of Madurai,8 kilometers south-west of the city Madurai. With the motto of "Vinaye Uyir" ,Tce aims at creating quality professionals to meet the emerging industrial and social needs through innovative teaching ,applied research and industrial interaction.
 								</p>
 								<!-- <p class="footer-text">
 									 Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -1714,20 +1775,11 @@ Contact Number: -<br>
 							</div>
 						</div>
 						<div class="col-lg-5  col-md-6 col-sm-6">
+							<h6>Map</h6>
 							<div class="single-footer-widget">
-								<h6>Newsletter</h6>
-								<p>Stay update with our latest</p>
-								<div class="" id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-										<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-			                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-			                            	<div style="position: absolute; left: -5000px;">
-												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											<div class="iframe-map">
+													<iframe allowfullscreen="" class="contact_map" frameborder="0" width="100%" height="300" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1389.68095443228!2d78.08189449298683!3d9.882940422993371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cfc68faa56e3%3A0xc6df3594063475f0!2sThiagarajar+College+of+Engineering!5e0!3m2!1sen!2sin!4v1480329691229" style="border:0" width="40%"></iframe>
 											</div>
-
-										<div class="info"></div>
-									</form>
-								</div>
 							</div>
 						</div>
 						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
@@ -1735,10 +1787,10 @@ Contact Number: -<br>
 								<h6>Follow Us</h6>
 								<p>Let us be social</p>
 								<div class="footer-social d-flex align-items-center">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-behance"></i></a>
+									<a href="https://www.facebook.com/TheOfficialTCEPage" target="_blank"><i class="fa fa-facebook"></i></a>
+									<a href="https://twitter.com/tceofficialpage" target="_blank"><i class="fa fa-twitter"></i></a>
+									<a href="https://www.linkedin.com/in/tcemadurai" target="_blank"><i class="fa fa-linkedin"></i></a>
+									<a href="https://www.youtube.com/ThiagarajarCollegeofEngineeringTCE"><i class="fa fa-youtube"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1994,6 +2046,18 @@ Contact Number: -<br>
 						});
 						$('#events').mouseout(function(){
 							$('#events').removeClass('animated pulse');
+						});
+						$('#events1').mouseenter(function(){
+							$('#events1').addClass('animated pulse');
+						});
+						$('#events1').mouseout(function(){
+							$('#events1').removeClass('animated pulse');
+						});
+						$('#events2').mouseenter(function(){
+							$('#events2').addClass('animated pulse');
+						});
+						$('#events2').mouseout(function(){
+							$('#events2').removeClass('animated pulse');
 						});
 
 						function isScrolledIntoView(elem) {
