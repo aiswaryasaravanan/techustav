@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Techutsav-2019-Thiagarajar College of Engineering</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+ 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<style media="screen">
+				.list-group-item
+				{
+					background-color:black;
+				}
+				tr:nth-child(even){
+					background-color:#b3ffff;
+					color:black;
+				}
+				tr:nth-child(odd){
+					background-color: #009999 !important;
+					border:3px solid #003333 !important;
+				}
+				table,th
+				{
+					border:3px solid #003333 !important;
+				}
+				th
+				{
+					background-color: #006666 !important;
+					color:white;
+					text-align:center;
+				}
+							.dropdown-menu>li>a
+			{
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 2em;
+			}
+				h2{
+				color: #fffdd0;
+				}
+
+				#cap1
+				{
+					animation-delay: 0s;
+				}
+				#cap2
+				{
+					animation-delay: .5s;
+				}
+				#cap3
+				{
+					animation-delay: 1s;
+				}
+				.deptList:hover{
+					background-color:#e6ffe6;
+				}
+				.pagination{
+					display:inline-block;
+				}
+				.pagination a{
+				   color:white;
+				   float:left;
+				   padding:8px 16px;
+				   text-decoration:none;
+				 }
+				.pagination a.active{
+				  ba:#4CAF50;
+				  color:white;
+				}
+				.pagination a:hover:not(.active) {
+				background-color: #ddd;}
+				.glow {
+					color: black;
+					-webkit-animation: glow 1s ease-in-out infinite alternate;
+					-moz-animation: glow 1s ease-in-out infinite alternate;
+					animation: glow 1s ease-in-out infinite alternate;
+				}
+				@-webkit-keyframes glow {
+				from {
+				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #136c68, 0 0 40px #136c68, 0 0 50px #136c68, 0 0 60px #136c68, 0 0 70px #136c68;
+				}
+				to {
+				text-shadow: 0 0 20px #fff, 0 0 30px 	#20B2AA, 0 0 40px 	#20B2AA, 0 0 50px 	#20B2AA, 0 0 60px 	#20B2AA, 0 0 70px 	#20B2AA, 0 0 80px 	#20B2AA;
+				}
+				}
+				/* th
+				{
+					background-color: green;
+					color:white;
+				} */
+								.column {
+  float: left;
+  width: 32%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+	margin:auto;
+	margin-bottom:20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.lnr-chevron-down
+{
+	display: none;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #003763;
+  color: #fffdd0;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+img.bg {
+    min-height: 100%;
+    min-width: 800px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+	opacity:0.5;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.dropdown-menu>li>a
+{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 2em;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.deptList a
+{
+	color:black !important;
+}
+.coupon button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.coupon button:hover {
+  opacity: 0.7;
+}
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0,0,0,0.8);
+  z-index: 2;
+  cursor: pointer;padding :50px 50 px;
+}
+
+#text{
+  /* position: absolute; */
+	margin: 0 0 0 0;padding : 50px 50px;font-family:arial;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  color: white;
+  text-align:center; line-height:normal;
+  }
+
+
+			</style>
+		</head>
+		<body>
+				<script>
+						$(document).ready(function(){
+								$(this).scrollTop(1);
+							});
+						</script>
+			  <header id="header" id="home">
+			    <div class="container-fluid">
+				<div>
+				<div id="logo" style="float:left;">
+				        <a href="index.html"><img src="img/logo3.png" height="50px" alt="" title="" /></a>
+				      </div>
+			    	<div class="row justify-left d-flex flex-row-reverse" style="float:right;">
+
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="#home">Home</a></li>
+				         <!-- <li class="menu-has-children"><a href="">Departments</a>
+				            <ul>
+								<li class="deptList"><a href="#ece">ECE</a></li>
+								<li class="deptList"><a href="#eee">EEE</a></li>
+								<li class="deptList"><a href="#cse">Computer Science</a></li>
+								<li class="deptList"><a href="#it">Information Technology</a></li>
+								<li class="deptList"><a href="#civil">Civil</a></li>
+								<li class="deptList"><a href="#mech">Mechanical</a></li>
+								<li class="deptList"><a href="#mect">Mechatronics</a></li>
+								<li class="deptList"><a href="index_mca.html">MCA</a></li>
+								<li class="deptList"><a href="#arch">B.Arch</a></li>
+
+				            </ul>
+				          </li> -->
+
+									<li style="cursor:pointer;color:white;margin-top:4px;" class="menu-has-children dropdown-toggle" id="d" data-toggle="dropdown"  aria-expanded="false">
+    Departments
+  </li>
+
+  <div style="" class="dropdown-menu" aria-labelledby="d">
+		<li class="deptList"><a href="#ece">ECE</a></li>
+		<li class="deptList"><a href="#eee">EEE</a></li>
+		<li class="deptList"><a href="#cse">Computer Science</a></li>
+		<li class="deptList"><a href="#it">Information Technology</a></li>
+		<li class="deptList"><a href="#civil">Civil</a></li>
+		<li class="deptList"><a href="#mech">Mechanical</a></li>
+		<li class="deptList"><a href="#mect">Mechatronics</a></li>
+		<li class="deptList"><a href="#mca">MCA</a></li>
+
+  </div>
+
+
+
+
+
+
+
+				        </ul>
+				      </nav><!-- #nav-menu-container -->
+			    	</div>
+					</div>
+			    </div>
+			  </header>
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container" style="height: 100%;">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-9 col-md-12">
+							<img src="img/tcelogo.jpg" height="120px" width="120px;" ><br><br>
+							<h2><b>THIAGARAJAR COLLEGE OF ENGINEERING</b></h2>
+							<h5><b>(A Govnt.Aided ISO 9001:2008 certified Autonomous Institution affiliated to Anna University)</b></h5>
+							<h5 class="text-white">WHERE QUALITY AND ETHICS MATTER</h5>
+							<h1 class="text-white">
+
+								TECHUTSAV
+							</h1>
+							</div>
+					</div>
+				</div>
+			</section>
+			<!--
+
+    <ol class="carousel-indicators" style="margin-left:130px;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+
+    </ol>
+
+     Wrapper for slides >
+    <div class="carousel-inner" style="width:600px;height:540px;">
+		<div class="item active">
+		  <div class="carousel-caption">
+			  <h5 class="text-uppercase"><strong>Electrical and Electronics Engineering</strong></h5>
+		  </div>
+		  <a href="#eee"><img src="img/main.jpeg" alt="Los Angeles" style="width:600px;height:540px;"></a>
+		</div>
+
+		<div class="item">
+		  <div class="carousel-caption">
+			  <h5 class="text-uppercase"><strong>Electronics and Communication Engineering</strong></h5>
+			</div>
+			<a href="#ece"><img src="img/s2.jpg" alt="Chicago" style="width:600px;height:540px;"></a>
+
+		</div>
+
+		<div class="item">
+		  <div class="carousel-caption">
+			  <h5 class="text-uppercase"><strong>Civil Engineering</strong></h5>
+		  </div>
+		  <a href="#civil"><img src="img/civil.jpg" alt="New york" style="width:600px;height:540px;"></a>
+
+		</div>
+
+			  <div class="item">
+				  <div class="carousel-caption">
+					  <h5 class="text-uppercase"><strong>Computer Science and Engineering</strong></h5>
+				  </div>
+				  <a href="#cse"><img src="img/py.png" alt="New york" style="width:600px;height:540px;"></a>
+			  </div>
+
+			  <div class="item">
+				  <div class="carousel-caption">
+					  <h5 class="text-uppercase"><strong>Information Technology</strong></h5>
+				  </div>
+				  <a href="#it"><img src="img/s1.jpg" alt="New york" style="width:600px;height:540px;"></a>
+			  </div>
+
+			  <div class="item">
+				  <div class="carousel-caption">
+					  <h5 class="text-uppercase"><strong>Mechanical Engineering</strong></h5>
+				  </div>
+				  <a href="#mech"><img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;"></a>
+			  </div>
+
+			  <div class="item">
+					  <div class="carousel-caption">
+						  <h5 class="text-uppercase"><strong>Mechatronics</strong></h5>
+					  </div>
+					  <a href="#mect"><img src="img/bug.jpg" alt="New york" style="width:600px;height:540px;"></a>
+			  </div>
+	  </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+			</section>
+-->
+<!-- End video-sec Area -->
+<br>
+<!-- <img src="img/bg1.jpg" class="bg" /> -->
+<div class="" style="background:url('img/bg1.jpg');margin-top:-20px;">
+	<div class="container-fluid">
+		<!-- ECE-->
+		<div id="ece">
+				<h2 class="glow" style="text-align:center;">Department of Electronics and Communication Engineering</h2><br><br>
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
+							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+									<big><b>
+								<li id="boxopen26" style="border:1px solid white" class="list-group-item">
+									LITTLETESLA
+								  </li>
+								  <div id="box26" style="font-size:14px;background-color:white;color:black;">
+									<b>EventDescription:</b>
+Innovationiscriticaltogrowthandwealthcreationinourcountry.Here
+comes an inter-collegiate technicalrivalry,Little Tesla for the
+engineeringenthusiasttocomeforwardandpresentyourideason
+electronicstoignitetheyoungbrains.Challengetheunchallenged!!
+<b>RoundDescription:</b>
+Studentsaregivenachancetodisplaytheirtechnicalandcreative
+skillsintherealm ofEmbeddedSystems.ImpressiveStudentswillbe
+adjudgedwinnersandrewardedcashprizes.
+<b>Rules:</b>
+1) Pre-registrationismustforparticipation.
+2) Ateamshouldcontainatmost3members.
+3) Nostoreboughtprojectsallowed.
+4) Notechnicalassistancewillbeprovided.
+5) Teamcanbedisqualifiedfromtheeventonaccountofany
+malpractice.
+<b>Venue:EMBEDDEDLAB</b>
+
+								  </div>
+								  <li id="boxopen27" style="border:1px solid white" class="list-group-item">
+									PAPYRUS
+								  </li>
+								  <div id="box27" style="font-size:14px;background-color:white;color:black;">
+									<b>EventDescription:</b>
+Areyouapersonwhothinksoutofbox?
+Thenthiseventisforyou.Popoutyoursplendidideasinapaper.This
+eventprovidesamassivestagetoexploretheideasinyoungand
+passionateminds.Newertheidea,newestthestyleofpresentation,
+higherthechanceofbeingheroonstage.
+<b>Format:</b>
+ParticipantshavetomailtheirAbstractsontopicwhichiscurrently
+trendingin ElectronicsandCommunication.Selectedabstractswillbe
+intimatedtopresentitonthedayofevent.
+<b>THEMES:</b>
+1)Securityandsurveillance
+2)Smartcommunication
+3)RoboticsandDrones
+4)Healthcareandbiomedicaldevices
+5)SmartVehicles
+<b>Rules:</b>
+
+1) Pre-registrationismustforparticipation.
+2) Ateamshouldcontainatmost2members.
+
+<b>VENUE:SEMINARHALL,ECEDEPT.</b>
+								  </div>
+								  <li id="boxopen28" style="border:1px solid white" class="list-group-item">
+									BUGTRONICS
+								  </li>
+								  <div id="box28" style="font-size:14px;background-color:white;color:black;">
+									<b>EVENTDESCRIPTION:</b>
+Areyoueagleeyed?
+
+It'syourturn!!!!!Spotthebug.
+Thiseventisallabouttestingyourskillsinanalysingandsynthesizing
+circuits.Comeandcrowoverothers!Giveforthyourcircuits.
+<b>FORMAT:</b>
+Weallhaveturbulencesinlifeaselectronicshave!Ofcourseitcanbe
+rectifiedtoo.Fornowinthisshortspanoftimelet'shelpourcircuitsto
+comeoutfromtheirdisturbanceandperformaccurately!ActlikeVenus
+flytrap,findthebugandsmashit!
+<b>ROUNDDESCRIPTION:</b>
+<b>Round1:(AnalysisandSynthesisround)</b>
+Asetof10questionswillbegivenwhichwillhavequestionsofanalysis
+andsynthesisofcircuits.Theteam hastoidentifythecircuitandhasto
+designitusingsoftwaresuchasPSPiceandMultisim.
+<b>Round2:(Hardwareround)
+</b>
+Givenaspecification,theteam hastodesignthecircuitefficiently
+(minimum numberofcomponentsandcashpoints).Theteam withthe
+mostefficientdesignwillbeawarded.
+Note:Eachcomponentwillhaveaspecificcashpoint.
+<b>RULES:</b>
+1) Pre-registrationismustforparticipation.
+2) Ateamshouldcontainatmost2members.
+3) UsageofMobilephoneisnotpermitted.
+
+<b>VENUE:AGILENTLAB
+</b>								  </div>
+								  <li id="boxopen29" style="border:1px solid white" class="list-group-item">
+									TECHATHLON
+								  </li>
+								  <div id="box29" style="font-size:14px;background-color:white;color:black;">
+									<b>Description:</b>
+Torturenumbers!
+Communicatewithyoursubjects!
+Logicwillautomaticallyfallinplaceandtheywillconfessanythingto
+you!
+Comeandplayhideandseekwithnumbersandcoreknowledge!
+
+NO.OF.ROUNDS:2
+<b>ROUND1:WRITTENTEST</b>
+
+ParticipantswillbegivenMultipleChoiceQuestions*whichis
+tobesolvedwithin30minutes.Theshortlistedparticipantswillattend
+thesecondround.
+*Note:Stream1:DigitalLogicCircuits.
+Stream2:SignalsandSystems,SignalProcessing.
+Stream 3: Analog and Digital Communication, Wireless
+Communication,ImageProcessing.
+(Candidatescanchooseanyonestream)
+
+<b>ROUND2:SOFTWARECODING</b>
+
+Participantswillbegiventwoprogramsbasedonthestream
+chosenwhichhastobesolvedwithinanhour.Based ontheapproach
+andknowledgeonprogramming,winnerswillbeselected.
+
+<b>RULES:</b>
+1) Pre-registrationismust.
+2) Mobilephonesarenotallowed.
+3) Calculatorsareallowed.
+4) Teamshouldcontainatmost2members.
+<b>VENUE:DIGITALSIGNALPROCESSINGLABORATORY</b>
+								  </div>
+								  <li id="boxopen30" style="border:1px solid white" class="list-group-item">
+									Whizkid2K19
+								  </li>
+								  <div id="box30" style="font-size:14px;background-color:white;color:black;">
+									<b>EVENTDESCRIPTION:</b>
+MagicinmuggleworldisaseriousoffenseandHarrys'outofbusiness.
+Thistime,theMinistrycontacts221B,Bakerstreetforhelpbutatrain
+fromPlatform9-3/4landedourSherlockinWesteros.Jointhepuzzling
+mazeandunleashyourmindpalace.MrandMsFantasyishereforthe
+PotterheadsandThroniestoReveliotheSherlockinyou.
+<b>FORMAT:</b>
+PUZZLESandMYSTERYSOLVING
+
+<b>RULES:</b>
+1)Eachteamshouldhaveaatmostof2members.
+2)TheJudge’sdecisionwillbefinal.
+
+<b>VENUE:A10,A11</b>
+								  </div>
+
+								</b></big>
+
+							</ul>
+						</div>
+						</div>
+							<br><br>
+						<div class="text-center"><a class="btn btn-success btn-lg" href="https://goo.gl/forms/FtAVAEjTmEgHaFz23">Register now</a></div>
+						<br><br>
+			</div>
+			</div>
+
+<!-- EEE-->
+
+		<div class="container-fluid">
+<div id="eee">
+			<h2 class="glow" style="text-align:center;">Department of Electrical and Electronics Engineering</h2><br><br>
+				<div class="row justify-content-center align-items-center ">
+					<div class="col-lg-6 video-left">
+						<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
+						<br><br>
+				</div>
+				</div>
+<div class="row">
+	<div class="col-md-4 col-sm-12">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/eee1.png" alt="Avatar" style="width:400px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<h2>WORLD OF CONTROL</h2>
+					<p><b>General Rules:</b> Individual entries are allowed.	The decision of evaluator is final</p>
+					<p><b>Round 1: Pen & Paper</b> - The questions shall be in the form of multiple choice,Technical puzzles etc.<br></p>
+					<p><b>Round 2: Buzzer round</b> - Team spirit of the entrants is tested by brainstorming the ideas in the buzzer round.</p>
+					<p><b>Contact number</b><br>E. S. N. Hareni - 9865258844<br>L . Denilson Jose - 9442417546</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-12">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/eee2.png" alt="Avatar" style="width:400px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<h2>DIGIFEST</h2>
+					<p><b>RULES: </b><br>Two participants per team. <br>First round will be" Get the Digi.<br>Selected participants have to "GAZE THE IMAGES".
+					</p>
+					<p><b>Contact Number:</b></p><p>Harini.N.M - 7708595243<br>Gayathiri.R - 9790428944</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-12">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/eee3.png" alt="Avatar" style="width:400px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<h2>ELECTRICKS</h2>
+					<p>Mobile phones are mandatory for each group<br>
+					The first round is the basics of electronic devices and circuits will be presented in the form of connexion game individually.<br>
+					The  selected participants will answer the technical questions by arranging the blocks given.</p>
+					<p><b>Contact Number:</b></p><p>T.Harivarthini - 8610685856<br>K.Vishali - 8778876290</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><br>
+<div class="row">
+	<div class="col-md-4 col-sm-12">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/eee4.png" alt="Avatar" style="width:400px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<h2>MACHINOVATION</h2>
+					<p>Each team should have 2 participants. Participants should not use their mobile phones </p>
+					<p><b>1st round: (30 minutes)</b> - consists of 20 MCQ(1 mark),1 or 2 puzzles(5 marks).<br></p>
+					<p><b>2nd round: (20 minutes)</b> - involves picking up the odd one out with justification (10 ques) from the given series.</p>
+					<p><b>Contact number</b><br>Deepika.K.M - 8220712249<br>Ferosha - 9486835201</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-12">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/eee5.png" alt="Avatar" style="width:400px;height:300px;">
+				</div>
+				<div class="flip-card-back">
+					<h2>EEE Battleground</h2>
+					<p>The battleground is ready!Form a duo and get the maximum kills to bag the chicken dinner! Each college is a clan. Come up with more teams and boost your clan points. Are you sure you can survive these electrical circuits?</p>
+					<p><b>Contact Number:</b></p><p>Scindiah - 9952592023<br>Hamsika - 9566782442</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-12">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/eee6.png" alt="Avatar" style="width:400px;height:300px;">
+				</div>
+				<!-- 1WIRELESS ELECTRICITY
+
+2RECENT ADVANCEMENTS IN ELECTRIC VEHICLE
+3GREEN ENERGY HARVESTING -->
+				<div class="flip-card-back">
+					<h2>PRESENTOVATION</h2>
+					<p>TOPICS<br>1.WIRELESS ELECTRICITY<br>2.RECENT ADVANCEMENTS IN ELECTRIC VEHICLE<br>3.GREEN ENERGY HARVESTING</p>
+					<p>The abstract should be precise in IEEE format and sent to <span style="color:yellow;">techutsav2k19eee@gmail.com</span> on or before <b style="color:yellow;"> 05.03.2019</b>.The team members(2 per team) are requested to send their name,college name,mail id along with abstract.
+					<p><b>Contact Number:</b></p><p>NagaNandhini.B - 7904010443,Nandhini.K - 9487528881</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div id="">
+		<div class="row justify-content-center align-items-center ">
+			<div class="col-lg-6 video-left">
+				<h1 class="animated bounce" style="text-align:center;">WORKSHOPS</h1>
+				<br><br>
+			</div>
+		</div>
+
+<div class="row" style="margin-bottom:10px;">
+	<div class="col-md-4 col-sm-12">
+
+	</div>
+<div class="col-md-4 col-sm-12">
+	<div class="coupon">
+		<div class="container_box">
+			<h3>PIC Microcontroller</h3>
+		</div>
+<img src="img/pic.jpeg" height="300" style="width:100%;">
+<div class="container" style="background-color:white">
+		<h5><b>Hands on Training Workshop on Architecture and Programming.</b></h5>
+		<p style="color:black;">PIC Microcontroller World of Wonders.Brain of embedded System</p>
+		<p  style="color:black;">Make You Professional Microcontroller Geeks.</p>
+
+</div>
+</div>
+</div>
+
+</div>
+<br><br>
+<div class="text-center"><a class="btn btn-success btn-lg" href="http://goo.gl/forms/7HDZGabSRVmQRnnJ2">Register now</a></div>
+		<br><br>
+		<!-- Civil-->
+
+				<div class="container-fluid">
+		<div id="civil">
+			<h2 class="glow" style="text-align:center;">Department of Civil Engineering</h2><br><br>
+				<div class="row justify-content-center align-items-center ">
+					<div class="col-lg-6 video-left">
+						<h1 class="animated bounce" style="text-align:center;">EVENTS
+						</h1>
+						<ul class="list-group" id='events' style="text-align:center;font-size:1.6em;cursor:pointer;">
+								<b>
+							<li id="boxopen14" style="border:1px solid white" class="list-group-item">
+								TECH-TALK
+							  </li>
+							  <div id="box14" style="font-size:14px;background-color:white;color:black;">
+								<b>Rules:</b>
+    • Individual entries are allowed.
+    • The decision of the evaluator is final.
+    • Maximum of 2 per team.
+<b>Round 1: Abstract submission</b>
+    • The softcopy of the abstract should be submitted to <span style="color:red;">ceatechutsav@gmail.com</span> on or before 4.03.2019
+    • The selected abstracts will be informed on or before 02.03.2019.
+    • With the Prepared Abstract kindly attach your Names, Name of your Institution and your Mobile numbers.
+<b>Topics to choose from:</b>
+    • Greener Construction Materials, Earthquake resisting structures, Dynamic related experimental Techniques, Modern techniques in solid waste management and waste water treatments, Ground improvement techniques, Soil dynamics and geotechnical sustainability, Advanced construction materials, Geo environmental Engineering, Geo hazards and Risk Assessment
+<b>Round 2: Power Point Presentation round</b>
+    • Working models, samples fetch you extra points.
+    • Candidates should bring their hard and soft copy of the paper at the time of presentation.
+    • Make your presentation as crisp as possible.
+    • You are allowed to expound your ideas only for about 10 minutes. This will be followed by a 5 minutes questioning session.
+    • There will be a check for equal contribution of both team mates.
+    • The pictorial and data credibility will have a check.
+    • The participant’s delivery and information gathered will be noted.
+    • The way participants reciprocate to judges’ comments and question will also be taken into account.
+    • Statistical and facts with good valuable pictures will also have an edge.
+<b>Contact Number:</b>
+ YUVAN SHANKAR KARTHICK S – 8973550994
+SIVA SHANKARI K - 8012015359
+							  </div>
+							  <li id="boxopen15" style="border:1px solid white" class="list-group-item">
+								CIVIQ
+							  </li>
+							  <div id="box15" style="font-size:14px;background-color:white;color:black;">
+								<b>Rules:</b>
+    • A team must contain 2 members only.
+    • No Individual Participation.
+    • The participants shall not be allowed to use mobile or other electronic instruments.
+    • Audience shall not give any clues or hints to the participants.
+    • Replacement of any participant of a team will not be allowed after        registration.
+    • The Team members are expected to speak only when they receive a question.
+<b>Round-1: Pounce Around</b>
+    • Common questions from all domains of civil engineering.
+<b>Round-2: Domain Specific</b>
+    • Each team will choose a chit from a bowl containing, number of chits with all civil engineering domains written on them.
+    • Based on the selected domain, you will face questions.
+<b>Round-3</b>
+    • You will get to know about it when it is happening.
+<b>Contact Number:</b>
+YUVAN SHANKAR KARTHICK S – 8973550994
+SIVA SHANKARI K - 8012015359
+							  </div>
+							  <li id="boxopen16" style="border:1px solid white" class="list-group-item">
+								BOB-THE BUILDER
+							  </li>
+							  <div id="box16" style="font-size:14px;background-color:white;color:black;">
+								<b>“Build your talent in blocks”</b>
+<b>Rules:</b>
+    • Maximum of 2 member per team.
+    • Individual participation allowed.
+<b>Round 1: Questionnaire</b>
+    • It will be a “Pen n Paper” round.
+<b>Round 2:  Model Fabrication</b>
+    • Fabricate a model using the given materials, within the stipulated time limit.
+    • Your model should abide by the guidelines given.
+    • Innovative designs are welcomed.
+    • Judges decision will be final.
+    • Models will be tested for maximum load bearing capacity.
+    • Further instructions will be given on spot.
+<b>Contact Number: </b>
+YUVAN SHANKAR KARTHICK S – 8973550994
+SIVA SHANKARI K - 8012015359
+							  </div>
+							  <li id="boxopen17" style="border:1px solid white" class="list-group-item">
+								TECH-CONTINUUM
+							  </li>
+							  <div id="box17" style="font-size:14px;background-color:white;color:black;">
+								<b>“Search for the Tech Treasure”</b><br>
+
+<b>Rules:</b>
+    • Two members per team.
+    • First team to reach the treasure will be rewarded.
+<b>Round 1: Questionnaire </b>
+    • It is a pen and paper round.
+    • Questions will be from all domains of civil engineering.
+<b>Round 2: Treasure hunt</b>
+  • Series of clues will lead to another clue and ultimately lead up to a final treasure.
+    • The clues can be solved by answering certain questions in civil engineering.
+    • Requires knowledge about practical side of civil engineering such as surveying, construction materials, geo-tech, fluid mechanics, construction management etc.
+<b>Contact Number:</b>
+YUVAN SHANKAR KARTHICK S - 8973550994
+SIVA SHANKARI K - 8012015359
+							  </div>
+							  <li id="boxopen18" style="border:1px solid white" class="list-group-item">
+								CAD DO
+							  </li>
+							  <div id="box18" style="font-size:14px;background-color:white;color:black;">
+								<b>“Do the one you can’t do in CAD Do”</b><br>
+<b>Rules:</b>
+    • Individual participation.
+<b>Round 1: Questionnaire</b>
+  • It is a pen and paper round.
+<b>Round 2: Auto-CAD
+</b>    • Use your CAD skills in drawing the plan.
+    •  You will be asked to auto-cad the given building as per the given guidelines within the stipulated time.
+    • Further instructions will be given on spot.
+<b>Contact Number:
+</b>YUVAN SHANKAR KARTHICK S – 8973550994
+SIVA SHANKARI K - 8012015359
+							  </div>
+
+							</b></big>
+
+						</ul></div></div>
+				</div>
+				</div>
+<br>
+				<div class="container-fluid">
+				<div id="">
+						<div class="row justify-content-center align-items-center ">
+							<div class="col-lg-6 video-left">
+								<h1 class="animated bounce" style="text-align:center;">WORKSHOPS</h1>
+								<br><br>
+							</div>
+						</div>
+
+				<div class="row" style="margin-bottom:10px;">
+					<div class="col-md-4 col-sm-12">
+
+					</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="coupon">
+						<div class="container_box">
+							<h3>BIM Software</h3>
+						</div>
+				<img src="img/bim.jpg" height="300" style="width:100%;">
+				<div class="container" style="background-color:white">
+						<h5><b>Enhance Your Employabilty Skills through BIM Software</b></h5>
+						<p style="color:black;">The Workshop is conducted jointly with Bentley Institute and ARK Info Solutions</p>
+						<p  style="color:black;">The Budding Civil Engineers will get a glimpse of software usage in Civil Engineerning.</p>
+						<p  style="color:red;">Eminent Speaker "MR.HARSHA" from ARK InfoSolutions is the Guest Speaker for the Workshop.</p>
+
+				</div>
+				</div>
+				</div>
+
+				</div>
+				<br><br>
+				<div class="text-center"><a class="btn btn-success btn-lg" href="http://goo.gl/forms/7HDZGabSRVmQRnnJ2">Register now</a></div>
+				<br><br>
+
+<!--it-->
+
+		<div class="container-fluid">
+		<div id="it">
+				<h2 class="glow" style="text-align:center;">Department of Information Technology</h2><br><br>
+				<div class="row justify-content-center align-items-center ">
+					<div class="col-lg-6 video-left">
+						<h1 class="animated bounce" style="text-align:center;">EVENTS
+						</h1>
+						<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+								<big><b>
+
+							  <li id="boxopen8" style="border:1px solid white" class="list-group-item">
+								Programmers Room
+							  </li>
+							  <div id="box8" style="font-size:14px;background-color:white;color:black;">
+								<b>‘ Truth can only be found in one place, the code ..! '</b>
+								Two per team
+<b>Round 1:</b> Test your programming ability and to survive in this room you have to code hard .! 
+<b>Round 2:</b> Tests your agility and tests your timing skill and according to your speed and thinking , prizes will be announced for the roommates .! 
+    • All the rounds will be conducted on online IDE .!
+    • Plagiarism strictly not allowed .! And if any plagiarism noted, roommates will be exiled from the programmers room! 
+<br><b>Contact Number:</b>
+Shanmuga priyan -9087512951  priya vinitha-9600882174
+							  </div>
+							  <li id="boxopen9" style="border:1px solid white" class="list-group-item">
+								Sweep the Bugs
+							  </li>
+								<div id="box9" style="font-size:14px;background-color:white;color:black;">
+									<b>‘Think beyond the “hello world” phase’ </b>
+							    • Debugging requires a level patience and skill that escapes ordinary programmers. Think you are up to it? Why doubt when you can find out ! 
+<br><b>General Rules</b><br>
+    • Set of questions will be given with some logical and syntactical errors. Points will be awarded for debugging each error.
+    • Maximum 2 members per team.
+    • Top teams will be selected for the subsequent rounds.
+    • Points scored in initial round will be added to the subsequent rounds for final evaluation.
+    • Decision of jury panel will be final and binding.
+<br><b>Contact</b>
+Hariharan - 9600534571,  Avinashkumar–8056072506, Sruthi Mai - 77085 63434.
+							  </div>
+							  <li id="boxopen10" style="border:1px solid white" class="list-group-item">
+								Test Drive
+							  </li>
+							  <div id="box10" style="font-size:14px;background-color:white;color:black;">
+								<b>Be the Better You, Be the revolution that the market needs. Be ready. Be smart. Be noticed!
+
+									“Before you are a leader, success is all about growing yourself. When you become a leader, success is all about growing others.” – Jack Welch.
+									</b>
+									If you are to make a difference in the competitive world with your uniqueness and competence, experience the best of managerial event to sharpen your technical leadership skills. Test Drive is a event to identify the best student with traits of a leader challenging best minds of the country.  This is the combat zone which scrutinizes the comprehensive workforce management capabilities and attitudes of the blossoming  Technical HR managers to tackle the organisational conflicts.
+
+<br><b>RULES:</b><br>
+    1. Individual event.
+    2. Rules and details of each round will be informed on the spot. Students are tested on all the  management and technical skills.
+    3. Strict adherence to schedule/deadline is requested from the participants.
+    4. Decisions are subject to the discretion of the organizers and the jury only.
+    5. Any misconduct by the participants will result in immediate disqualification.
+
+
+
+<br><b>Contact :</b>  Faiz Mohammed Ali -9843371146
+Guru chandru- 8870689998
+Vandna -7530021183
+							  </div>
+							  <li id="boxopen11" style="border:1px solid white" class="list-group-item">
+								Manargial auction
+							  </li>
+							  <div id="box11" style="font-size:14px;background-color:white;color:black;">
+								<b>"Can you hold your horses? Can you spend your money right?"</b><br>
+								<b>General Rules</b><br>
+    • 3-4 per team
+
+    • Prelims will be a Quiz and final teams will be shortlisted based on the score!
+
+    • Your Managerial ability will be tested in the finals! Upgrade yourselves by watching IPL auction
+
+
+<br><b>Contact</b><br>
+Nithya Krishnan - 9486902983
+Yovan – 9042690764
+Gunaseelan - 9965177721
+							  </div>
+							  <li id="boxopen12" style="border:1px solid white" class="list-group-item">
+								Chain your thoughts
+							  </li>
+							  <div id="box12" style="font-size:14px;background-color:white;color:black;">
+								<b>‘Deep dive into your hidden insights... '</b>
+								Chain your thoughts is an event, where participants put on their thinking caps and compete to become the Master Connector. It isn’t about what you think, but how do you think.
+<br><b>Rules:</b><br>
+    • Two participants per team at the max.
+    • The questions shall be in the form of technical connexion game.
+<br><b>Format:</b><br>
+    • Prelims is a pen and paper round.
+    • Finals has four rounds.
+    1. The House Party Protocol (Joint Family).
+    2. One by one Two by Two
+    3. Rapid Fire
+    4. Infinity Gauntlet (Five Clue Collection)
+<br><b>Judging Criteria:</b><br>
+Players will be ranked on the basis of their total points. At the end of each round, participants are shortlisted. Top three teams will be awarded the prize.
+<br><b>Contact Number:</b><br>
+Kalaichelvan K: 94885 53208
+Subhiksha:      75983 29064
+							  </div>
+
+							</b></big>
+						</ul></div></div>
+						<br><br>
+						<div class="text-center"><a class="btn btn-success btn-lg" href="https://goo.gl/forms/YSflBk1REfxDUiin1">Register now</a></div>
+						<br><br>
+		</div>
+</div>
+
+<!-- CSE-->
+
+		<div class="container-fluid">
+	<div id="cse">
+	<h2 class="glow" style="text-align:center;">Department of Computer Science and Engineering</h2><br><br>
+		<div class="row justify-content-center align-items-center ">
+			<div class="col-lg-6 video-left">
+
+				<h1 class="animated bounce" style="text-align:center;">EVENTS
+				</h1>
+				<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+						<big><b>
+					<li id='boxopen1' style="border:1px solid white" class="list-group-item">Cryptic enigma</li>
+						<div  id="box1" style="font-size:14px;background-color:white;color:black;">
+						<p><b> General Rules </b><br>
+Individual entry<br>
+The decision of evaluator is final<br>
+  Questions based on Data structures and DBMS<br>
+  Questions along with code snippet are given for the participant<br>
+ Find solution for the question and solve the corresponding code snippet<br>
+ The output of the code snippet navigates to the next question<br>
+ Follow this procedure till all the questions are solved<br>
+  Apply the given crypt algorithm to the answers to trace the technical fact<br>
+</p>
+						</div>
+					<li id='boxopen2' style="border:1px solid white" class="list-group-item">In Search of Oracle Guru</li>
+					<div  id="box2" style="font-size:14px;background-color:white;color:black;">
+						<b>General Rules</b><br>
+						<ul>
+						<li>Individual entry</li>
+						<li>The decision of evaluator is final</li>
+						</ul>
+<b>Round 1: MCQ</b><br>
+The questions shall be in the form of multiple choice<br>
+<b>Round 2: Database </b><br>
+Database will be given ,you should query the necessary data and finish your objective<br>
+
+
+
+					</div>
+					<li id='boxopen3' style="border:1px solid white"  class="list-group-item">Neo-logic</li>
+					<div  id="box3" style="font-size:14px;background-color:white;color:black;">
+						<b>General Rules</b>
+There are 2 person in each team.(individual participation is also allowed)<br>
+The decision of evaluator is final<br>
+
+<b>Round 1 : prelims </b><br>
+
+There will 35 multiple choice questions based on c/c++ language in this round<br>
+You will get 20 mins to answer these questions<br>
+Each right answer carries 3 marks and 1 mark will be deducted for a wrong answer<br>
+For the unattempted questions,total will remain unaffected<br>
+
+<b>Round 2: finals  </b><br>
+
+This round will check your programming skills<br>
+You will be given 4 questions<br>
+1 hour duration will be given for this round<br>
+Winners will be selected on the basis of no. of questions solved, logic used and speed<br>
+
+					</div>
+					<li id='boxopen4' style="border:1px solid white"  class="list-group-item">The Linux Challenge</li>
+					<div  id="box4" style="font-size:14px;background-color:white;color:black;">
+					<b>General Rules</b><br>
+Individual entry<br>
+The decision of evaluator is final<br>
+<b>Preliminary Round</b><br>
+Multiple Choice questions(MCQs) or very-short-answer type questions will be asked in this round<br>
+<b>Final Round</b><br>
+This round tests your ability to implement your theoretical knowledge practically on a physical system. Questions related to basic commands, troubleshooting and shell scripting will be required to be solved<br>
+The number of participants selected for this round will depend on number of participants in first round<br> It will be conducted in two parts<br>
+ First part will include system troubleshooting and the second part will have questions related to basic commands and shell scripting<br>
+
+					</div>
+					<li id='boxopen5' style="border:1px solid white"  class="list-group-item">Infinity Tech War</li>
+					<div  id="box5" style="font-size:14px;background-color:white;color:black;">
+				<b>General Rules</b><br>
+Team event<br>
+Team size is two<br>
+The decision of evaluator is final<br>
+<b>Round 1: Tech fight </b><br>
+Each team have 2 chances, they are given a tech topic<br>
+The team should debate other team<br>
+<b>Round 2:One to all coder</b><br>
+A single problem will be given<br>
+You should code to solve it<br>
+The team that codes in many languages takes the scores,time and space efficient code matters here<br>
+
+					</div>
+
+				<br><br>
+				<div class="text-center"><a class="btn btn-success btn-lg" href=" https://goo.gl/forms/1Dqm5NJs8dCxHgkw2">Register now</a></div>
+			</div>
+		</div>
+		<br/><br/>
+		</div>
+
+<!-- mechanical-->
+		<div class="container-fluid">
+		<div id="mech">
+				<h2 class="glow" style="text-align:center;">Department of Mechanical Engineering</h2><br><br>
+					<div class="row justify-content-center align-items-center ">
+						<div class="col-lg-6 video-left">
+							<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
+							<ul class="list-group" id='events' style="text-transform: uppercase;text-align:center;font-size:1.2em;cursor:pointer;">
+							<b><big>
+								<li id="boxopen33" style="border:1px solid white" class="list-group-item">
+								PRO QUIZ
+								  </li>
+								  <div id="box33" style="font-size:14px;background-color:white;color:black;">
+									It consists of three rounds which tests the participants’ knowledge in mechanical engineering concepts.
+									Round 1- MCQs
+									Round 2- Rapid Fire
+									Round 3- QUIZ
+
+									No electronic gadgets are allowed during the event.
+									Two per team<br><br>
+									<b>Contact number</b> : Mari ganesh – 822015987
+ 									Neela aravind- 9790430724
+								  </div>
+								  <li id="boxopen34" style="border:1px solid white" class="list-group-item">
+										MR.WELDER
+								  </li>
+								  <div id="box34" style="font-size:14px;background-color:white;color:black;">
+										Two per team
+
+
+										Joining of metal pieces provided.
+Round 1- MCQs on welding
+Round 2- Plates
+Round 3- Pipes.
+Shoes should be worn compulsorily.Surface preparations should be done properly and will be considered for evaluation
+<br><br>	<b>Contact number</b>  Mathan Kumar-9790557030
+  Arun prakash­-8508669903
+
+								  </div>
+								  <li id="boxopen35" style="border:1px solid white" class="list-group-item">
+											PRO-MODELLING
+								  </li>
+								  <div id="box35" style="font-size:14px;background-color:white;color:black;">
+										Two per team
+										Data will be provided and no external use of materials will be allowed.
+										Testing and analyzing the model using Creo software
+										Round 1- Written
+										Round 2- Analysis
+										Round 1 will be of both MCQs and 2 marks questions<br><br>
+										<b>Contact number</b>   Vishnuvardhan-9698245159
+	                         Gokul .D-  9524794253
+								  </div>
+
+								</b></big>
+
+							</ul>
+						</div>
+						</div>
+							<br><br>
+						<div class="text-center"><a class="btn btn-success btn-lg" href=" https://goo.gl/forms/BOD4kFAeY9fhhNC12">Register now</a></div>
+						<br><br>
+			</div>
+			</div>
+
+<!-- mechatronics-->
+
+<section class="video-sec-area section-gap" >
+		<div class="container-fluid">
+<div id="mect">
+			<h2 class="glow" style="align:center">Department of Mechatronics</h2><br>
+				<div class="row justify-content-center align-items-center ">
+					<div class="col-lg-6 video-left">
+						<h1 class="animated bounce" style="text-align:center;">EVENTS</h1>
+						<br><br>
+					</div>
+				</div>
+
+	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="coupon">
+				<div class="container_box">
+					<h3>ROBO PRIX</h3>
+				</div>
+		<img src="http://robohub.org/wp-content/uploads/2014/03/High_Res_NAO_NextGen_05-1024x683.jpg" height="300" style="width:100%;">
+		<div class="container" style="background-color:white">
+				<h5><b>Fascinated of racing? Hunting for an opportunity? “Bring your Bot, Bag the prize.”</b></h5>
+				<p style="color:black;">We provide you a track to open your enthusiasm. The robot completing the race within the shortest time, overcoming obstacles of all the laps will be declared as winner</p>
+				<div id="overlay" class="overlay">
+  <div id="text">
+		<br>
+		<button  onclick="off()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+		</button>
+		<br>
+		<br>Description:<br>We provide you a track to open your enthusiasm. The robot completing the race within the shortest time, overcoming obstacles of all the laps will be declared as winner.<br>
+          Individual Event<br>Round 1: Qualification on time basis.<br>Round 2: The Robot which traverses the specified part of the track in the least time will be the winner.<br>
+          Rules:<br>
+1) Any damage to the bot caused by the obstacles will be the responsibility of the participants and the organizers will not be held responsible for the same.<br>
+2) The event coordinators &amp; Judges decision regarding scoring and judgement will be final. Track will be revealed on spot.<br>
+Bot Dimensions: -<br>
+1. The following size limitations apply for each robot - Width –max 25 cm. Length –max 25 cm. Height – max 15 cm.<br>
+2. The Robot can be wireless or wired.<br>
+3. In case of wired robot, the wire length should be at least 4 meters<br>
+“Bring your Bot, Bag the prize.”
+Arena: -<br>
+The track surface and course line may have unevenness.
+Arena will consist of Switch Bridge, speed breakers, marble pit, slippery path,
+rotating ting disc, curve ramp down, seesaw etc.<br>
+Registration: -
+Pre-Registration or On-line.
+<br>
+Venue & Event Timings: - Open auditorium stage & 9:30-11:00</div>
+</div>
+				<p><button onclick="on()">To know more</button></p>
+			</div>
+			</div>
+		</div>
+
+
+  <div class="col-md-4 col-sm-12">
+  <div class="coupon">
+    <div class="container_box">
+    <h3>ROBO WAR</h3>
+  </div>
+  <img src="http://aumtechnicia.in/wp-content/uploads/2018/12/robo-war.jpg" height="300" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h5><b>“Here is a nice platform for you to show your warrior attitude This is not war of evil and god, but for the great techno-minds, who design the robots”</b></h5>
+    <p style="color:black;">Many students think about building a fighting robot of their own. If you are crazy, you can build your own fighting machine for rob war.</p>
+	<div id="overlay1" class="overlay">
+  <div id="text">
+		<br>
+		<button  onclick="off1()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+		</button>
+		<br><br>Individual Event Rules:<br>
+1) Team can have maximum number of 2 members.<br>
+2) Team members can be from different colleges.<br>
+3) A team is allowed to play with only one robot.(Any team that is not ready at the time specified will be disqualified from the competition automatically.)<br>
+4) No one should touch the robot during the game going so will lead to elimination.<br>
+5) In case of wired robot the wire should remain slack and lifted throughout the race. It should not disturb the arena or the participants. If so then the team will be disqualified.<br>
+6) Decision of the Event Organizers shall be treated as final and binding on all and cannot be contested.(Rounds may be varying depending on number of participants.)<br>
+Bot Specifications:<br>
+1) The robot can have maximum dimensions of (Length: 30 cm;Breadth: 30 cm;Height: 30 cm).<br>
+2) Maximum Weight: 8Kg, (The weight includes battery.)<br>
+3) The robot can be controlled by wired/wireless. (Preferably wireless)<br>
+4) The robot is controlled wired or wirelessly. (If wireless we are not possible if frequency interfere with any other bot)<br>
+5) Individual bot must be brought and not be purchased with any other team mate or shop.<br>
+Criteria for Triumph:
+1. A robot is declared victorious if its opponent is immobilized or out of the arena.
+2. A robot will be declared immobile if it cannot display linear motion of atleast one inch in a timed period of 30 seconds. A bot with one side of its drive train disabled will not be counted out if it can demonstrate some degree of controlled movement.
+3. If both robots survive the five minutes at that point, the robot with the higher hit points wins. (timing also varying)
+4. The winner moves on, the loser is eliminated from the tournament.<br>
+Registration: -
+Pre-Registration or On-line.<br>
+Venue & Event Timings: - S2 hall & 10:30-12:00<br>
+Prize Money: -
+1st Prize - Rs. 3,000
+2nd Prize - Rs. 2,000
+3rd Prize - Rs. 1,000<br>
+Contact Number: -
+1.Shyam Kumar: 80988-49165
+2. Pradheep Kumar: 97902-46004
+3. Andrew Kirubsingh: 94454-28056
+  </div></div>
+	<p><button onclick="on1()">To know more</button></p>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-4 col-sm-12">
+  <div class="coupon">
+    <div class="container_box">
+    <h3>ANZIGEN</h3>
+  </div>
+  <img src="img/rob.jpg" height="300" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h5><b><br>“Show your work and Impress us”</b></h5>
+    <p style="color:black;">Projects on the following fields are invited, Mechanical, Electrical & Electronics, Automation and Robotics.
+Also, any other innovative projects relevant to Mechatronics domain will be accepted</p>
+	<div id="overlay2" class="overlay">
+  <div id="text">
+		<br>
+		<button  onclick="off2()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+		</button><br><br>
+		Team event: Max. 2 per team<br>
+Rules:<br>
+1) The abstract of project report should be sent to the coordinator on or before last date of registration.<br>
+2) Hardware/Software prototype and Presentation is compulsory.<br>
+3) Participants should give the demo of the project.<br>
+4) Teams will be given a time period of 10 minutes: 8 minutes for presentation and demo and 2 minutes for queries.<br>
+Send abstract to the mail id - <u>techutsavmect2k19@gmail.com</u><br>
+Registration: -
+Pre-Registration or On-line.<br>
+Venue & Event Timings: - M&S lab & 11:00-12:30<br><br>
+
+Prize Money: -<br>
+1st Prize - Rs. 3,000<br>
+2nd Prize - Rs. 2,000<br>
+3rd Prize - Rs. 1,000<br><br>
+Contact Number: -<br>
+1. Alphonse Ebenezer: 98948-47975<br>
+2. Aravind Chockiaah: 94879-01513
+		</div></div>
+	<p><button onclick="on2()">To know more</button></p>
+	</div>
+  </div>
+  </div>
+  <div class="col-md-4 col-sm-12">
+  <div class="coupon">
+    <div class="container_box">
+    <h3>CHUTES AND LADDER</h3>
+  </div>
+  <img src="img/rob1.jpg" height="300" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h5><b>Description:</b></h5>
+    <p style="color:black;">Participate in the life-sized version of the classic board game that
+everyone has inevitably played as a child! Roll the colossal dice, and get ready
+to maneuver your way through the map by answering technical, general or
+riddle-based question every time you encounter a snake or a ladder.</p>
+	<div id="overlay3" class="overlay">
+  <div id="text">
+		<br>
+		<button  onclick="off3()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+		</button>
+		<BR><BR>
+		Team event: Max. 3 per team<br>
+Rounds: -<br>
+Round 1: Will be a typical snake and ladder game. Based on the number in the
+rolled die, Questions will be asked. Either technical or logical or a riddle.<br>
+Round 2: Movie connect. Movies that depict upcoming technologies are used
+here. A snap from the movie will be given and the team has to be creative in
+predicting the usage of the similar technology shown in the picture in real
+world.<br>
+Round 3: Tech Congress. Here a debate or headed argument is set between two
+teams. The team which dominates the other will be crowned as the ultimate
+winner.<br>
+Note: Eliminations will be there at the end of each round.<br>
+Registration: -
+Pre-Registration or On-line.<br>
+Venue & Event Timings: - S4 hall & 10:00-11:30<br>
+Prize Money: -<br>
+1st Prize - Rs. 3,000<br>
+2nd Prize - Rs. 2,000<br>
+3rd Prize - Rs. 1,000<br>
+Contact Number: -<br>
+1. Chendur Rakesh: 77084-57497<br>
+2. Thilak Pranal: 99402-71659
+</div></div>
+	<p><button onclick="on3()">To know more</button></p>
+ </div>
+ </div>
+ </div>
+ <div class="col-md-4 col-sm-12">
+  <div class="coupon">
+    <div class="container_box">
+    <h3>MAZE RUNNER</h3>
+  </div>
+  <img src="img/rob.jpg" height="300" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h5><b>Description:</b></h5>
+    <p style="color:black;">A mobile robot should be made which can solve a maze with shortest
+path on its own. Maze walls will be of height 10cm from ground. Path width
+
+size will be of 25cm. Optimum robot width should be up to 15cm although it’s
+up to the participant’s wish. Robot should be of autonomous operations with its
+own battery. The robot which completes the maze in less duration will be
+announced the winner.</p>
+	<div id="overlay4" class="overlay">
+  <div id="text">
+		<br>
+		<button  onclick="off4()" type="button" style="width:10px;color:white;float:right;font-size:1.3em;" class="close" aria-label="Close">
+  		<span aria-hidden="true" style="color:white;font-size:1.3em;">&times;</span>
+		</button>
+		<BR><BR>
+		Team event: Max. 2 per team<br>
+RULES: <br>
+1. Robot should be of AUTONOMOUS OPERATION and no human
+controls should be given. If found participant will be disqualified.<br>
+2. Robot cannot be shared between teams. Every team must bring their own
+robot.<br>
+3. Turn radius can be of any degree within 180.<br>
+4. Robot can be of any size said it can fit between maze walls.<br>
+5. No wireless communication allowed. Robot should not send or receive
+any data to any other nearby devices.<br>
+6. All the components should be within the robot itself including the
+batteries required to operate.<br>
+7. Components place cannot be changed once the event starts.<br>
+8. The robot should complete two rounds of the event with its single charge
+of the battery, no charging in between will be allowed. Select an
+appropriate battery size.<br>
+9. The robot can be reset to its original start position if participants requires
+but the time will not be reset.<br>
+10. Maze may be provided for testing the robot.<br>
+11. Maze can be altered if the Judges/Organizers requires to do so at any
+period of time.<br>
+12. Final decisions are up to the Judges/Organizers. Nothing to discuss<br>
+
+ROUNDS: -<br>
+Round 1: Robot can explore the maze recording the maze and
+calculating the shortest path<br>
+
+Round 2: Robot can solve the maze with the shortest path as fast as
+
+possible<br>
+
+ARENA: -
+
+*total time includes both the rounds
+*Points calculation will be announced on spot
+
+1. Maze will be of 5m x 5m square
+2. Maze consists of multiple path in which only some of them leads to
+the end.Among them only one will be of shortest path
+3. Maze wall will be of 10cm from the ground, place the sensors
+appropriately
+4. Width of the path will be 25cm, make sure to fit your bot within 15cm
+for optimum space between walls for moving
+5. A test maze may be provided for the participants before event starts.
+*Test maze need not to be the same as competing maze. Although it
+can be.
+*Organizers/Judges can alter the maze at any time.<br>
+
+Registration:
+Pre-Registration or On-line.
+Venue & Event Timings: - S3 hall & 11:30-01:00<br>
+Prize Money: -<br>
+1st Prize - Rs. 3,000<br>
+2nd Prize - Rs. 2,000<br>
+3rd Prize - Rs. 1,000<br>
+Contact Number: -<br>
+1.Akash: 97862-33883
+</div></div>
+	<p><button onclick="on4()">To know more</button></p>
+ </div>
+ </div>
+ </div>
+
+
+
+
+ </div>
+ </div>
+ </div>
+</section>
+
+
+
+
+
+							<br><br>
+						<div class="text-center"><a class="btn btn-success btn-lg" href=" https://goo.gl/forms/NjLXr8Xll2XCNdsj1">Register now</a></div>
+						<br><br>
+			</div>
+	</div>
+		<!-- Start price Area -->
+
+
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Us</h6>
+								<p>
+									Spread across 143 acres, The Institution and hostels are located near Thiruparangundram on the outskrits of Madurai,8 kilometers south-west of the city Madurai. With the motto of "Vinaye yir" ,Tce aims at creating quality professionals to meet the emerging industrial and social needs through innovative teaching ,applied research and industrial interaction.
+								</p>
+								<!-- <p class="footer-text">
+									 Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Newsletter</h6>
+								<p>Stay update with our latest</p>
+								<div class="" id="mc_embed_signup">
+									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+										<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+			                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+			                            	<div style="position: absolute; left: -5000px;">
+												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											</div>
+
+										<div class="info"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Follow Us</h6>
+								<p>Let us be social</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-dribbble"></i></a>
+									<a href="#"><i class="fa fa-behance"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+</div>
+			<!-- End footer Area -->
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/parallax.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+			<script type="text/javascript">
+					$(document).ready(function(){
+						var i=1;
+						for(i=1;i<=44;i++)
+						{
+							console.log('as');
+							$('#box'+i).hide();
+						}
+						// $('ul').hover(function(){
+
+
+								$('#boxopen1').click(function(){
+									console.log('as');
+									$('#box1').slideToggle();
+								});
+
+								$('#boxopen2').click(function(){
+									console.log('as');
+									$('#box2').slideToggle();
+								});
+
+								$('#boxopen3').click(function(){
+									console.log('as');
+									$('#box3').slideToggle();
+								});
+
+								$('#boxopen4').click(function(){
+									console.log('as');
+									$('#box4').slideToggle();
+								});
+
+								$('#boxopen5').click(function(){
+									console.log('as');
+									$('#box5').slideToggle();
+								});
+
+								$('#boxopen6').click(function(){
+									console.log('as');
+									$('#box6').slideToggle();
+								});
+								$('#boxopen7').click(function(){
+									console.log('as');
+									$('#box7').slideToggle();
+								});
+
+								$('#boxopen8').click(function(){
+									console.log('as');
+									$('#box8').slideToggle();
+								});
+
+								$('#boxopen9').click(function(){
+									console.log('as');
+									$('#box9').slideToggle();
+								});
+
+								$('#boxopen10').click(function(){
+									console.log('as');
+									$('#box10').slideToggle();
+								});
+
+								$('#boxopen11').click(function(){
+									console.log('as');
+									$('#box11').slideToggle();
+								});
+
+								$('#boxopen12').click(function(){
+									console.log('as');
+									$('#box12').slideToggle();
+								});
+								$('#boxopen13').click(function(){
+									console.log('as');
+									$('#box13').slideToggle();
+								});
+								$('#boxopen14').click(function(){
+									console.log('as');
+									$('#box14').slideToggle();
+								});
+
+								$('#boxopen15').click(function(){
+									console.log('as');
+									$('#box15').slideToggle();
+								});
+
+								$('#boxopen16').click(function(){
+									console.log('as');
+									$('#box16').slideToggle();
+								});
+
+								$('#boxopen17').click(function(){
+									console.log('as');
+									$('#box17').slideToggle();
+								});
+								$('#boxopen18').click(function(){
+									console.log('as');
+									$('#box18').slideToggle();
+								});
+								$('#boxopen19').click(function(){
+									console.log('as');
+									$('#box19').slideToggle();
+								});
+								$('#boxopen20').click(function(){
+									console.log('as');
+									$('#box20').slideToggle();
+								});
+								$('#boxopen21').click(function(){
+									console.log('as');
+									$('#box21').slideToggle();
+								});
+
+								$('#boxopen22').click(function(){
+									console.log('as');
+									$('#box22').slideToggle();
+								});
+
+								$('#boxopen23').click(function(){
+									console.log('as');
+									$('#box23').slideToggle();
+								});
+
+								$('#boxopen24').click(function(){
+									console.log('as');
+									$('#box24').slideToggle();
+								});
+								$('#boxopen25').click(function(){
+									console.log('as');
+									$('#box25').slideToggle();
+								});
+								$('#boxopen26').click(function(){
+									console.log('as');
+									$('#box26').slideToggle();
+								});
+
+								$('#boxopen27').click(function(){
+									console.log('as');
+									$('#box27').slideToggle();
+								});
+
+								$('#boxopen28').click(function(){
+									console.log('as');
+									$('#box28').slideToggle();
+								});
+								$('#boxopen29').click(function(){
+									console.log('as');
+									$('#box29').slideToggle();
+								});
+								$('#boxopen30').click(function(){
+									console.log('as');
+									$('#box30').slideToggle();
+								});
+
+								$('#boxopen31').click(function(){
+									console.log('as');
+									$('#box31').slideToggle();
+								});
+
+								$('#boxopen32').click(function(){
+									console.log('as');
+									$('#box32').slideToggle();
+								});
+								$('#boxopen33').click(function(){
+									console.log('as');
+									$('#box33').slideToggle();
+								});
+
+								$('#boxopen34').click(function(){
+									console.log('as');
+									$('#box34').slideToggle();
+								});
+
+								$('#boxopen35').click(function(){
+									console.log('as');
+									$('#box35').slideToggle();
+								});
+								$('#boxopen36').click(function(){
+									console.log('as');
+									$('#box36').slideToggle();
+								});
+
+								$('#boxopen37').click(function(){
+									console.log('as');
+									$('#box37').slideToggle();
+								});
+
+								$('#boxopen38').click(function(){
+									console.log('as');
+									$('#box38').slideToggle();
+								});$('#boxopen39').click(function(){
+									console.log('as');
+									$('#box39').slideToggle();
+								});
+
+								$('#boxopen40').click(function(){
+									console.log('as');
+									$('#box40').slideToggle();
+								});
+
+								$('#boxopen41').click(function(){
+									console.log('as');
+									$('#box41').slideToggle();
+								});
+
+								$('#boxopen42').click(function(){
+									console.log('as');
+									$('#box42').slideToggle();
+								});
+
+								$('#boxopen43').click(function(){
+									console.log('as');
+									$('#box43').slideToggle();
+								});
+
+								$('#boxopen44').click(function(){
+									console.log('as');
+									$('#box44').slideToggle();
+								});
+
+
+
+
+
+
+
+						// });
+
+						// $('.check').css('visibility','hidden');
+						$('#events').mouseenter(function(){
+							$('#events').addClass('animated pulse');
+						});
+						$('#events').mouseout(function(){
+							$('#events').removeClass('animated pulse');
+						});
+
+						function isScrolledIntoView(elem) {
+    			var docViewTop = $(window).scrollTop();
+    			var docViewBottom = docViewTop + $(window).height();
+
+    		var elemTop = $(elem).offset().top;
+    		var elemBottom = elemTop + $(elem).height();
+
+    		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  		}
+  		// If element is scrolled into view, fade it in
+  		$(window).scroll(function() {
+    		$('.check').each(function() {
+      		if (isScrolledIntoView(this) === true) {
+						$('.check').show();
+						$(this).addClass('animated  fadeInLeft');
+      			}
+					else{
+							// $('.check').hide();
+							$(this).removeClass('animated  fadeInLeft');
+					}
+
+    			});
+  				});
+			});
+				function on() {
+	$('.overlay').addClass('animated zoomIn');
+	document.getElementById("overlay").style.backgroundColor = "black";
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+function on1() {
+	$('.overlay').addClass('animated zoomIn');
+	document.getElementById("overlay1").style.backgroundColor = "black";
+  document.getElementById("overlay1").style.display = "block";
+}
+
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+function on2() {
+	$('.overlay').addClass('animated zoomIn');
+	document.getElementById("overlay2").style.backgroundColor = "black";
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+function on3() {
+	$('.overlay').addClass('animated zoomIn');
+	document.getElementById("overlay3").style.backgroundColor = "black";
+  document.getElementById("overlay3").style.display = "block";
+}
+
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+function on4() {
+	$('.overlay').addClass('animated zoomIn');
+	document.getElementById("overlay4").style.backgroundColor = "black";
+  document.getElementById("overlay4").style.display = "block";
+}
+
+function off4() {
+  document.getElementById("overlay4").style.display = "none";
+}
+
+			</script>
+
+		</body>
+
+	</html>
