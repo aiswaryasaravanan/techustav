@@ -57,7 +57,7 @@
   background:$primary-color;
   color:$white;
   padding:6px 20px!important;
-  text-transform:uppercase; 
+  text-transform:uppercase;
 }
 
 
@@ -207,7 +207,7 @@
 
 #mobile-nav-toggle i {
   color: $primary-color;
-  font-weight: 900;  
+  font-weight: 900;
 }
 
 @media (max-width: 800px) {
@@ -309,4 +309,3 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
-
