@@ -44,8 +44,9 @@
 			<link rel="stylesheet" href="css/main.css">
 			<style media="screen">
 
-			#wrap
+			body,#wrap
 			{
+				scroll-behavior: smooth;
 				-webkit-overflow-scrolling:touch;
 				transform: translate3d(0,0,0);
 	  		-webkit-transform: translate3d(0,0,0);
@@ -295,6 +296,13 @@ h1
 	margin-bottom: 10px !important;
 	margin-top: 10px !important;
 }
+body
+{
+		will-change:scroll-position;
+}
+#wrap{
+	will-change:scroll-position,contents,transform;
+}
 /* body::-webkit-scrollbar {
     width:20px;
 }
@@ -399,7 +407,7 @@ q{
 			    </div>
 			  </header>
 
-<div id="wrap">
+
 	<!-- start banner Area -->
 	<section class="banner-area relative" id="home" style="margin-top:-22px;">
 		<div class="overlay overlay-bg"></div>
@@ -441,6 +449,7 @@ q{
 </div>
 <!-- <img src="img/bg1.jpg" class="bg" /> -->
 <div class="" style="background:url('img/compgif.gif')no-repeat fixed;margin-top:-20px;background-size:cover;">
+	<div id="wrap" >
 	<!-- <div style="background-color:#D5D3D2;"> -->
 <div class="container-fluid">
 <!-- ECE-->
