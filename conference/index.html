@@ -20,6 +20,7 @@
 		<link rel="icon" type="image/png" href="img/logoo.png">
 
 		<link rel="prefetch" href="img">
+		<link rel="preload" href="img/wall.jpg" as="image" type="image/jpg">
 
 
 
@@ -48,8 +49,8 @@
 			{
 				scroll-behavior: smooth;
 				-webkit-overflow-scrolling:touch;
-				transform: translate3d(0,0,0);
-	  		-webkit-transform: translate3d(0,0,0);
+				/* transform: translate3d(0,0,0);
+	  		-webkit-transform: translate3d(0,0,0); */
 
 			}
 			#mobile-nav ul
@@ -298,10 +299,10 @@ h1
 }
 body
 {
-		will-change:scroll-position;
+		will-change:scroll-position,contents;
 }
 #wrap{
-	will-change:scroll-position,contents,transform;
+	will-change:scroll-position,contents;
 }
 /* body::-webkit-scrollbar {
     width:20px;
@@ -448,12 +449,10 @@ q{
 
 </div>
 <!-- <img src="img/bg1.jpg" class="bg" /> -->
-<div class="" style="background:url('img/compgif.gif')no-repeat fixed;margin-top:-20px;background-size:cover;overscroll-behavior: contain;">
-	<div id="wrap" style="overscroll-behavior: contain;">
-	<!-- <div style="background-color:#D5D3D2;"> -->
-<div class="container-fluid">
+<div id="wrap" style="background:url('img/wall.jpg')no-repeat center fixed;margin-top:-20px;background-size:cover;">
+	<div class="container-fluid">
 <!-- ECE-->
-<!-- ECE-->
+
 <section class="video-sec-area section-gap" >
 	<div class="container-fluid">
 <div id="ece">
@@ -2981,7 +2980,8 @@ The judging will be based on the creativity, idea and choice of ideas.
 
 
 <!-- Start price Area -->
-
+</div>
+</div>
 
 	<!-- start footer Area -->
 					<div style="backgroung-color:lightgrey;">
@@ -3027,9 +3027,6 @@ The judging will be based on the creativity, idea and choice of ideas.
 
 </div>
 
-
-
-</div>
 
 
 			<!-- End footer Area -->
